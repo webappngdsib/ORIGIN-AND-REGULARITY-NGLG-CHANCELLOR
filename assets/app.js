@@ -8,7 +8,16 @@
   var LI = { en: 0, es: 1, pt: 2 };
   var REGION_ORDER = ["europe", "africa", "asia", "americas", "south"];
   var HOME_GL = { 1: true, 2: true };
-  var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "attestation"];
+  var EMBLEMS = {
+    ugle: { src: "assets/emblems/united-grand-lodge-england.png", alt: "Emblem of the United Grand Lodge of England" },
+    ireland: { src: "assets/emblems/grand-lodge-ireland.png", alt: "Emblem of the Grand Lodge of Ireland" },
+    scotland: { src: "assets/emblems/grand-lodge-scotland.png", alt: "Emblem of the Grand Lodge of Scotland" }
+  };
+  // Timeline entries (by position): 1993 UGLE, 1994 Ireland, 1995 Scotland
+  var TIMELINE_EMBLEMS = { 1: "ugle", 2: "ireland", 3: "scotland" };
+  var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
+  var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
+  var STAMPS = ["sheet-figure", "stamp-parthenon", "stamp-figure", "sheet-parthenon"];
   var lang = "en";
   var T = I18N.en;
 
@@ -82,8 +91,12 @@
       return '<div class="founder"><div class="no">' + T.lodgeNo + " " + f[0] + '</div><div class="nm">' + esc(f[1]) + '</div><div class="ct">' + esc(city(f[2])) + "</div></div>";
     }).join("");
 
-    $("timelineList").innerHTML = T.timeline.map(function (x) {
-      return '<li><div class="yr">' + esc(x[0]) + "</div><p>" + esc(x[1]) + "</p></li>";
+    $("timelineList").innerHTML = T.timeline.map(function (x, k) {
+      var em = TIMELINE_EMBLEMS[k];
+      var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + esc(x[1]) + "</p>";
+      if (!em) return "<li>" + body + "</li>";
+      return '<li class="has-emblem"><div class="tl-text">' + body + '</div><img class="tl-emblem" src="' + EMBLEMS[em].src +
+        '" alt="' + esc(EMBLEMS[em].alt) + '" loading="lazy"></li>';
     }).join("");
 
     $("tilesList").innerHTML = T.tiles.map(function (x) {
@@ -95,7 +108,15 @@
       return '<li class="' + (k === gms.length - 1 ? "current" : "") + '"><span class="t">' + esc(g[0]) + "</span><span>" + esc(g[1]) + "</span></li>";
     }).join("");
 
+    $("stampsList").innerHTML = STAMPS.map(function (n, k) {
+      return '<figure class="' + (n.indexOf("sheet") === 0 ? "sheet" : "stamp") + '"><img src="assets/photos/stamps/' + n +
+        '.jpg" alt="" loading="lazy"><figcaption>' + esc(T.stampCaps[k]) + "</figcaption></figure>";
+    }).join("");
+
     renderTemples();
+    $("templeGallery").innerHTML = (window.NGLG_TEMPLE_GALLERY || []).map(function (src) {
+      return '<figure><img src="' + esc(src) + '" alt="" loading="lazy"></figure>';
+    }).join("");
     renderRegister();
 
     $("pillarsList").innerHTML = T.pillars.map(function (p, k) {
@@ -164,7 +185,7 @@
       rows.forEach(function (r) {
         var cn = countryName(r[2]);
         html += '<tr data-region="' + g + '" data-q="' + esc(norm(r[0] + " " + cn + " " + r[2] + " " + r[3])) + '"><td class="no">' + r[0] +
-          '</td><td class="ct">' + esc(cn) + "</td><td>" + esc(r[3]) +
+          '</td><td class="ct">' + esc(cn) + "</td><td>" + (REGISTER_EMBLEMS[r[0]] ? '<img class="reg-emblem" src="' + EMBLEMS[REGISTER_EMBLEMS[r[0]]].src + '" alt="">' : "") + esc(r[3]) +
           (HOME_GL[r[0]] ? '<span class="home">' + esc(T.homeGL) + "</span>" : "") + "</td></tr>";
       });
     });

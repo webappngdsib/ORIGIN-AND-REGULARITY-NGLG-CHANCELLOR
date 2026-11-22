@@ -142,18 +142,15 @@
 <section class="page chapter" id="leadership" data-ch="6">
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="leadEyebrow"></p><h2 data-t="leadTitle"></h2><p class="ch-lead" data-t="leadLead"></p></header>
-    <div class="portraits">
-      <figure class="photo photo-portrait" data-slot="gm" data-default="assets/photos/grand-master.jpg">
+    <div class="portraits single">
+      <figure class="photo photo-portrait photo-tall" data-slot="gm" data-default="assets/photos/grand-master.jpg">
         <div class="photo-box"></div>
         <figcaption><span class="role" data-t="gmRole"></span><span class="name" data-t="gmName"></span></figcaption>
-      </figure>
-      <figure class="photo photo-portrait" data-slot="gs" data-default="assets/photos/grand-secretary.jpg">
-        <div class="photo-box"></div>
-        <figcaption><span class="role" data-t="gsRole"></span><span class="name" data-t="gsName"></span></figcaption>
       </figure>
     </div>
     <h3 class="sub-head center" data-t="gmListTitle"></h3>
     <ol class="gm-list" id="gmList"></ol>
+    <p class="note gm-first" data-t="gmFirstNote"></p>
   </div>
 </section>
 
@@ -162,6 +159,8 @@
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="templesEyebrow"></p><h2 data-t="templesTitle"></h2><p class="ch-lead" data-t="templesLead"></p></header>
     <div class="temples" id="templesList"></div>
+    <h3 class="sub-head" data-t="galleryTitle"></h3>
+    <div class="temple-gallery" id="templeGallery"></div>
     <p class="note small" data-t="templesSource"></p>
   </div>
 </section>
@@ -194,31 +193,57 @@
   </div>
 </section>
 
-<!-- ============ 10. CONCLUSION ============ -->
-<section class="page chapter" id="conclusion" data-ch="10">
+<!-- ============ 10. CHARITY & HERITAGE ============ -->
+<section class="page chapter" id="charity" data-ch="10">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="chEyebrow"></p><h2 data-t="chTitle"></h2><p class="ch-lead" data-t="chLead"></p></header>
+    <article class="charity">
+      <div class="charity-mark"><img src="assets/photos/stamps/charity-emblem.jpg" alt="Emblem of the Grand Charity of Greece"></div>
+      <div>
+        <h3 data-t="charityTitle"></h3>
+        <p data-t="charityText"></p>
+        <a class="charity-link" href="https://emste-charity.org/" target="_blank" rel="noopener"><span data-t="charityLink"></span> · emste-charity.org</a>
+      </div>
+    </article>
+    <h3 class="sub-head" data-t="stampsTitle"></h3>
+    <p class="stamps-text" data-t="stampsText"></p>
+    <div class="stamps" id="stampsList"></div>
+  </div>
+</section>
+
+<!-- ============ 11. CONCLUSION ============ -->
+<section class="page chapter" id="conclusion" data-ch="11">
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="conEyebrow"></p><h2 data-t="conTitle"></h2><p class="ch-lead" data-t="conLead"></p></header>
     <div class="pillars" id="pillarsList"></div>
   </div>
 </section>
 
-<!-- ============ 11. ATTESTATION / SIGNATURE ============ -->
-<section class="page chapter attestation" id="attestation" data-ch="11">
+<!-- ============ 12. ATTESTATION / SIGNATURE ============ -->
+<section class="page chapter attestation" id="attestation" data-ch="12">
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="attEyebrow"></p><h2 data-t="attTitle"></h2></header>
     <div class="att-body">
-      <img class="att-crest" src="assets/nglg-crest.jpg" alt="">
       <p class="att-text" data-t="attText"></p>
-      <div class="signature">
-        <div class="sig-place"><span data-t="attPlace"></span>, <span id="sigDate"></span></div>
-        <div class="sig-line"></div>
-        <div class="sig-name" data-t="attSigner"></div>
-        <div class="sig-role" data-t="attSign"></div>
-        <div class="sig-org" data-t="attOrg"></div>
+      <div class="att-grid">
+        <figure class="photo photo-portrait photo-tall" data-slot="gs" data-default="assets/photos/grand-secretary.jpg">
+          <div class="photo-box"></div>
+          <figcaption><span class="role" data-t="gsRole"></span><span class="name" data-t="gsName"></span></figcaption>
+        </figure>
+        <div class="att-side">
+          <img class="att-crest" src="assets/nglg-crest.jpg" alt="">
+          <div class="signature">
+            <div class="sig-place"><span data-t="attPlace"></span>, <span id="sigDate"></span></div>
+            <div class="sig-line"></div>
+            <div class="sig-name" data-t="attSigner"></div>
+            <div class="sig-role" data-t="attSign"></div>
+            <div class="sig-org" data-t="attOrg"></div>
+          </div>
+          <h3 class="sub-head center" data-t="contactTitle"></h3>
+          <dl class="contact" id="contactList"></dl>
+          <p class="tagline" data-t="tagline"></p>
+        </div>
       </div>
-      <h3 class="sub-head center" data-t="contactTitle"></h3>
-      <dl class="contact" id="contactList"></dl>
-      <p class="tagline" data-t="tagline"></p>
     </div>
   </div>
 </section>
