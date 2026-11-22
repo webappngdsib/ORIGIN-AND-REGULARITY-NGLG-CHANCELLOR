@@ -231,6 +231,21 @@ main{padding:28px 0 40px}
 .pillar h4{font-family:var(--display);color:var(--navy);font-size:16px;margin-bottom:10px}
 .pillar p{margin:0;font-size:15.5px;line-height:1.5}
 
+/* ---------- charity & stamps ---------- */
+.charity{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center;background:var(--navy);color:#fff;padding:26px 28px;border-top:3px solid var(--gold-2)}
+.charity-mark{background:#fff;border-radius:50%;padding:10px;border:2px solid var(--gold-2);aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.charity-mark img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+.charity h3{font-family:var(--display);color:var(--gold-lt);font-size:19px;margin-bottom:8px}
+.charity p{margin:0 0 14px;color:#E3E6F0;font-size:16.5px;line-height:1.55}
+.charity-link{display:inline-block;background:var(--gold-2);color:var(--navy);text-decoration:none;font:700 12px var(--sans);letter-spacing:.06em;padding:8px 14px;border-radius:5px}
+.charity-link:hover{background:var(--gold-lt)}
+.stamps-text{margin:-4px 0 18px;text-align:justify}
+.stamps{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
+.stamps figure{margin:0;text-align:center}
+.stamps img{width:100%;border:1px solid var(--line);box-shadow:0 6px 16px rgba(19,32,63,.12);background:#fff}
+.stamps figcaption{font-style:italic;color:var(--muted);font-size:14.5px;margin-top:6px}
+.gm-first{max-width:760px;margin-left:auto;margin-right:auto}
+
 /* ---------- attestation ---------- */
 .att-body{text-align:center;max-width:820px;margin:0 auto}
 .att-crest{width:120px;margin:0 auto 22px;border-radius:10px;border:2px solid var(--gold-2)}
@@ -277,6 +292,9 @@ main{padding:28px 0 40px}
   .cover-stats div:nth-child(-n+2){border-bottom:1px solid rgba(201,164,74,.3)}
   .portraits{grid-template-columns:minmax(0,240px);gap:30px}
   .att-grid{grid-template-columns:1fr;gap:30px}
+  .charity{grid-template-columns:1fr;text-align:center}
+  .charity-mark{width:130px;margin:0 auto}
+  .stamps{grid-template-columns:1fr}
   .att-grid .photo{max-width:240px;margin:0 auto}
   .gm-list,.bodies,.prose.cols{columns:1}
   .rc-row{grid-template-columns:120px 1fr 30px;font-size:13px}
@@ -380,6 +398,15 @@ main{padding:28px 0 40px}
   .pillars{grid-template-columns:repeat(4,1fr)}
   .attestation .att-text{font-size:13pt}
   .att-crest{width:26mm;margin-bottom:5mm}
+  .charity{grid-template-columns:32mm 1fr;padding:5mm 6mm;gap:6mm;break-inside:avoid}
+  .charity p{font-size:10.5pt}
+  .charity-link{font-size:8.5pt}
+  .stamps{gap:4mm 8mm;padding:0 10mm}
+  .stamps figure{break-inside:avoid}
+  .stamps img{box-shadow:none}
+  .stamps figcaption{font-size:9pt}
+  .stamps-text{font-size:10.5pt}
+  #leadership .gm-first{margin-top:3mm;font-size:9.5pt}
   .sig-place{margin-bottom:14mm}
   .attestation .att-text{margin-bottom:8mm}
   .cover-stats,.cover-issued{break-inside:avoid}

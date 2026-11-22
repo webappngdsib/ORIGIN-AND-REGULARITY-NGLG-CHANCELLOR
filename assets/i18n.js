@@ -7,7 +7,7 @@ en: {
   docTitle: "Origin and Regularity — National Grand Lodge of Greece",
   langLabel: "Language",
   exportPdf: "Export A4 PDF",
-  nav: ["Summary", "Principles", "Origin", "Recognition", "Today", "Temples", "Register", "Attestation"],
+  nav: ["Summary", "Principles", "Origin", "Recognition", "Today", "Temples", "Register", "Charity", "Attestation"],
   chapter: "Chapter",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
   coverKicker: "A Dossier for Fraternal Review",
@@ -107,6 +107,7 @@ en: {
   gmName: "MW Bro. Ioannis Benetatos",
   gsRole: "Grand Secretary",
   gsName: "RW. Bro Dimitrios Skiadopoulos",
+  gmFirstNote: "The first Grand Master of the National Grand Lodge of Greece, elected in 1986, was the late MW Bro. Stephanos Paipetis, Professor of Mechanics in the Department of Mechanical Engineering and Aeronautics of the University of Patras.",
   gmListTitle: "Grand Masters of the NGLG",
 
   templesEyebrow: "Masonic Temples",
@@ -161,6 +162,16 @@ en: {
     ["Enduring Recognition", "Historical and continuing recognition by long-established Regular Grand Lodges, including Ireland and Scotland."]
   ],
 
+  chEyebrow: "Charity & Heritage",
+  chTitle: "Charity and Masonic Heritage",
+  chLead: "Beside our fellow man, through acts of giving.",
+  charityTitle: "The Grand Charity of Greece (M.A.S.)",
+  charityText: "The Grand Charity (Mega Agathoergo Soma — M.A.S.) is the charitable organisation of the National Grand Lodge of Greece. Guided by solidarity, it supports people and social institutions facing hardship, with respect, responsibility and transparency.",
+  charityLink: "Visit the Grand Charity",
+  stampsTitle: "The Masonic Stamps of the NGLG",
+  stampsText: "The stamps of the NGLG were issued by Hellenic Post (ELTA) in 2007. They express the unity and the values of Greek Freemasonry, pairing classical Greek motifs with the emblem of the Grand Charity and its motto, “Supreme Charity and Respect for Man and the Environment”. They are unique collector's items of historical and Masonic significance.",
+  stampCaps: ["Sheet · classical figure", "Stamp · the Parthenon, €0.65", "Stamp · classical figure, €0.52", "Sheet · the Parthenon"],
+
   attEyebrow: "Attestation",
   attTitle: "Certified by the Grand Secretariat",
   attText: "The National Grand Lodge of Greece maintains complete archival records of its constitutional foundation, treaties of recognition and international correspondence. Any duly appointed Grand Lodge is most welcome to visit our Headquarters in Athens to examine the original documentary evidence.",
@@ -180,7 +191,7 @@ es: {
   docTitle: "Origen y Regularidad — Gran Logia Nacional de Grecia",
   langLabel: "Idioma",
   exportPdf: "Exportar PDF A4",
-  nav: ["Resumen", "Principios", "Origen", "Reconocimiento", "Hoy", "Templos", "Registro", "Certificación"],
+  nav: ["Resumen", "Principios", "Origen", "Reconocimiento", "Hoy", "Templos", "Registro", "Beneficencia", "Certificación"],
   chapter: "Capítulo",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
   coverKicker: "Dossier para examen fraternal",
@@ -280,6 +291,7 @@ es: {
   gmName: "M.R.H. Ioannis Benetatos",
   gsRole: "Gran Secretario",
   gsName: "RW. Bro Dimitrios Skiadopoulos",
+  gmFirstNote: "El primer Gran Maestro de la Gran Logia Nacional de Grecia, elegido en 1986, fue el finado M.R.H. Stephanos Paipetis, catedrático de Mecánica en el Departamento de Ingeniería Mecánica y Aeronáutica de la Universidad de Patras.",
   gmListTitle: "Grandes Maestros de la GLNG",
 
   templesEyebrow: "Templos Masónicos",
@@ -334,6 +346,16 @@ es: {
     ["Reconocimiento duradero", "Reconocimiento histórico y continuado por Grandes Logias Regulares de larga tradición, entre ellas Irlanda y Escocia."]
   ],
 
+  chEyebrow: "Beneficencia y Patrimonio",
+  chTitle: "Beneficencia y Patrimonio Masónico",
+  chLead: "Junto al ser humano, con actos de entrega.",
+  charityTitle: "La Gran Beneficencia de Grecia (M.A.S.)",
+  charityText: "La Gran Beneficencia (Mega Agathoergo Soma — M.A.S.) es la organización benéfica de la Gran Logia Nacional de Grecia. Guiada por la solidaridad, apoya a personas y estructuras sociales en situación de necesidad, con respeto, responsabilidad y transparencia.",
+  charityLink: "Visitar la Gran Beneficencia",
+  stampsTitle: "Los Sellos Masónicos de la GLNG",
+  stampsText: "Los sellos de la GLNG fueron emitidos por Correos de Grecia (ELTA) en 2007. Expresan la unidad y los valores de la Masonería griega, combinando motivos clásicos griegos con el emblema de la Gran Beneficencia y su lema, «Suprema Beneficencia y Respeto por el ser humano y el medio ambiente». Son piezas de colección únicas, de valor histórico y masónico.",
+  stampCaps: ["Pliego · figura clásica", "Sello · el Partenón, 0,65 €", "Sello · figura clásica, 0,52 €", "Pliego · el Partenón"],
+
   attEyebrow: "Certificación",
   attTitle: "Certificado por la Gran Secretaría",
   attText: "La Gran Logia Nacional de Grecia conserva archivos completos de su fundación constitucional, tratados de reconocimiento y correspondencia internacional. Toda Gran Logia debidamente representada es bienvenida a visitar nuestra sede en Atenas para examinar la documentación original.",
@@ -353,7 +375,7 @@ pt: {
   docTitle: "Origem e Regularidade — Grande Loja Nacional da Grécia",
   langLabel: "Idioma",
   exportPdf: "Exportar PDF A4",
-  nav: ["Resumo", "Princípios", "Origem", "Reconhecimento", "Hoje", "Templos", "Registro", "Certificação"],
+  nav: ["Resumo", "Princípios", "Origem", "Reconhecimento", "Hoje", "Templos", "Registro", "Beneficência", "Certificação"],
   chapter: "Capítulo",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
   coverKicker: "Dossiê para exame fraternal",
@@ -453,6 +475,7 @@ pt: {
   gmName: "Sereníssimo Ir. Ioannis Benetatos",
   gsRole: "Grande Secretário",
   gsName: "RW. Bro Dimitrios Skiadopoulos",
+  gmFirstNote: "O primeiro Grão-Mestre da Grande Loja Nacional da Grécia, eleito em 1986, foi o saudoso Sereníssimo Ir. Stephanos Paipetis, professor de Mecânica no Departamento de Engenharia Mecânica e Aeronáutica da Universidade de Patras.",
   gmListTitle: "Grão-Mestres da GLNG",
 
   templesEyebrow: "Templos Maçônicos",
@@ -506,6 +529,16 @@ pt: {
     ["Fidelidade constitucional", "Adoção e observância contínuas dos princípios universalmente aceitos da Maçonaria Regular."],
     ["Reconhecimento duradouro", "Reconhecimento histórico e contínuo por Grandes Lojas Regulares de longa tradição, entre elas Irlanda e Escócia."]
   ],
+
+  chEyebrow: "Beneficência e Patrimônio",
+  chTitle: "Beneficência e Patrimônio Maçônico",
+  chLead: "Ao lado do ser humano, com atos de doação.",
+  charityTitle: "A Grande Beneficência da Grécia (M.A.S.)",
+  charityText: "A Grande Beneficência (Mega Agathoergo Soma — M.A.S.) é a organização beneficente da Grande Loja Nacional da Grécia. Guiada pela solidariedade, apoia pessoas e estruturas sociais em situação de necessidade, com respeito, responsabilidade e transparência.",
+  charityLink: "Visitar a Grande Beneficência",
+  stampsTitle: "Os Selos Maçônicos da GLNG",
+  stampsText: "Os selos da GLNG foram emitidos pelos Correios da Grécia (ELTA) em 2007. Expressam a unidade e os valores da Maçonaria grega, combinando motivos clássicos gregos com o emblema da Grande Beneficência e o seu lema, «Suprema Beneficência e Respeito pelo ser humano e pelo meio ambiente». São peças de coleção únicas, de valor histórico e maçônico.",
+  stampCaps: ["Folha · figura clássica", "Selo · o Partenon, € 0,65", "Selo · figura clássica, € 0,52", "Folha · o Partenon"],
 
   attEyebrow: "Certificação",
   attTitle: "Certificado pela Grande Secretaria",

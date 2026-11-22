@@ -16,7 +16,8 @@
   // Timeline entries (by position): 1993 UGLE, 1994 Ireland, 1995 Scotland
   var TIMELINE_EMBLEMS = { 1: "ugle", 2: "ireland", 3: "scotland" };
   var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
-  var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "attestation"];
+  var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
+  var STAMPS = ["sheet-figure", "stamp-parthenon", "stamp-figure", "sheet-parthenon"];
   var lang = "en";
   var T = I18N.en;
 
@@ -105,6 +106,11 @@
     var gms = window.NGLG_GRAND_MASTERS;
     $("gmList").innerHTML = gms.map(function (g, k) {
       return '<li class="' + (k === gms.length - 1 ? "current" : "") + '"><span class="t">' + esc(g[0]) + "</span><span>" + esc(g[1]) + "</span></li>";
+    }).join("");
+
+    $("stampsList").innerHTML = STAMPS.map(function (n, k) {
+      return '<figure class="' + (n.indexOf("sheet") === 0 ? "sheet" : "stamp") + '"><img src="assets/photos/stamps/' + n +
+        '.jpg" alt="" loading="lazy"><figcaption>' + esc(T.stampCaps[k]) + "</figcaption></figure>";
     }).join("");
 
     renderTemples();

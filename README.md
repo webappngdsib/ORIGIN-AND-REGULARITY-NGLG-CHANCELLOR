@@ -31,9 +31,9 @@ Open the page directly in a chosen language:
 
 | Language | File | Pages |
 |---|---|---|
-| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 19 |
-| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 19 |
-| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 19 |
+| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 20 |
+| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 20 |
+| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 20 |
 
 ---
 
@@ -48,12 +48,13 @@ Open the page directly in a chosen language:
 | III | **A Regular Origin — 7 June 1986** | The foundation by six regularly constituted Lodges, the 1993 recognition by UGLE, the Constitution, and the six founding Lodges |
 | IV | **Chain of Recognition** | Timeline from 1986 to today, showing the emblems of UGLE (1993), Ireland (1994) and Scotland (1995), coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |
 | V | **The NGLG Today** | Wide photograph of the **Grand Meeting**, key figures, the Conference of Worshipful Masters, the Grand Meetings, and the cities where the NGLG is present |
-| VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986 |
+| VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
 | VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
 | IX | **Governance** | Administrative and Masonic structure; the 14 Masonic bodies and independent orders |
-| X | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
-| XI | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
+| X | **Charity and Masonic Heritage** | The Grand Charity of Greece (M.A.S.), with a link to [emste-charity.org](https://emste-charity.org/), and the NGLG Masonic stamps issued by ELTA in 2007 |
+| XI | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
+| XII | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
 
 ### Key facts
 
@@ -101,7 +102,7 @@ The page has three photo slots:
 |---|---|---|
 | Grand Meeting (full width) | `assets/photos/grand-meeting.jpg` | wide, about 3 : 1 |
 | Grand Master | `assets/photos/grand-master.jpg` | tall portrait, 1 : 2 (chapter VI, centred) |
-| Grand Secretary | `assets/photos/grand-secretary.jpg` | tall portrait, 1 : 2 (chapter XI, beside the signature) |
+| Grand Secretary | `assets/photos/grand-secretary.jpg` | tall portrait, 1 : 2 (chapter XII, beside the signature) |
 
 There are two ways to add them:
 - **For everyone:** upload the files to the `assets/photos/` folder on GitHub (*Add file → Upload files*), using exactly these names. They then appear on the live page and in every exported PDF.
