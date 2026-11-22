@@ -127,6 +127,7 @@
 
     $("sigDate").textContent = new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
     $("regSearch").placeholder = T.regSearch;
+    $("btnLetter").href = "letter.html?lang=" + lang;
 
     renderPhotos();
     setRunningFooter();
@@ -185,7 +186,7 @@
       rows.forEach(function (r) {
         var cn = countryName(r[2]);
         html += '<tr data-region="' + g + '" data-q="' + esc(norm(r[0] + " " + cn + " " + r[2] + " " + r[3])) + '"><td class="no">' + r[0] +
-          '</td><td class="ct">' + esc(cn) + "</td><td>" + (REGISTER_EMBLEMS[r[0]] ? '<img class="reg-emblem" src="' + EMBLEMS[REGISTER_EMBLEMS[r[0]]].src + '" alt="">' : "") + esc(r[3]) +
+          '</td><td class="ct">' + esc(cn) + "</td><td class=\"gl\">" + (REGISTER_EMBLEMS[r[0]] ? '<img class="reg-emblem" src="' + EMBLEMS[REGISTER_EMBLEMS[r[0]]].src + '" alt="">' : "") + esc(r[3]) +
           (HOME_GL[r[0]] ? '<span class="home">' + esc(T.homeGL) + "</span>" : "") + "</td></tr>";
       });
     });

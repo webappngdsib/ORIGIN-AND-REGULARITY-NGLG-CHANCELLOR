@@ -7,6 +7,7 @@ en: {
   docTitle: "Origin and Regularity — National Grand Lodge of Greece",
   langLabel: "Language",
   exportPdf: "Export A4 PDF",
+  petitionBtn: "Petition letter PDF",
   nav: ["Summary", "Principles", "Origin", "Recognition", "Today", "Temples", "Register", "Charity", "Attestation"],
   chapter: "Chapter",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
@@ -149,7 +150,8 @@ en: {
     "The Supreme Grand Chapter of Royal Arch Masons of Greece",
     "The Royal Order of Scotland",
     "The Supreme Council 33° for Greece, A.&A.S.R. (est. 1872)",
-    "The Grand Council of Knight Masons for Greece"
+    "The Grand Council of Knight Masons for Greece",
+    "Widows Sons"
   ],
 
   conEyebrow: "Conclusion",
@@ -191,6 +193,7 @@ es: {
   docTitle: "Origen y Regularidad — Gran Logia Nacional de Grecia",
   langLabel: "Idioma",
   exportPdf: "Exportar PDF A4",
+  petitionBtn: "Carta de petición PDF",
   nav: ["Resumen", "Principios", "Origen", "Reconocimiento", "Hoy", "Templos", "Registro", "Beneficencia", "Certificación"],
   chapter: "Capítulo",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
@@ -333,7 +336,8 @@ es: {
     "Supremo Gran Capítulo de Masones del Real Arco de Grecia",
     "Real Orden de Escocia",
     "Supremo Consejo 33° para Grecia, R.E.A.A. (fundado en 1872)",
-    "Gran Consejo de Caballeros Masones de Grecia"
+    "Gran Consejo de Caballeros Masones de Grecia",
+    "Widows Sons (Hijos de la Viuda)"
   ],
 
   conEyebrow: "Conclusión",
@@ -375,6 +379,7 @@ pt: {
   docTitle: "Origem e Regularidade — Grande Loja Nacional da Grécia",
   langLabel: "Idioma",
   exportPdf: "Exportar PDF A4",
+  petitionBtn: "Carta de petição PDF",
   nav: ["Resumo", "Princípios", "Origem", "Reconhecimento", "Hoje", "Templos", "Registro", "Beneficência", "Certificação"],
   chapter: "Capítulo",
   motto: "ΕΓΩ ΕΙΜΙ Ο ΩΝ",
@@ -517,7 +522,8 @@ pt: {
     "Supremo Grande Capítulo dos Maçons do Real Arco da Grécia",
     "Real Ordem da Escócia",
     "Supremo Conselho 33° para a Grécia, R.E.A.A. (fundado em 1872)",
-    "Grande Conselho dos Cavaleiros Maçons da Grécia"
+    "Grande Conselho dos Cavaleiros Maçons da Grécia",
+    "Widows Sons (Filhos da Viúva)"
   ],
 
   conEyebrow: "Conclusão",
