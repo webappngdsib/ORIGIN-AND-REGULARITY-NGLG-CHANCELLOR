@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Origin and Regularity — National Grand Lodge of Greece</title>
+<meta name="description" content="Origin and Regularity of the National Grand Lodge of Greece — a dossier for fraternal review, in English, Spanish and Brazilian Portuguese, exportable as an A4 PDF.">
+<meta name="author" content="RW. Bro Dimitrios Skiadopoulos, Grand Secretary">
+<link rel="icon" href="assets/nglg-crest.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style id="pageRunStyle"></style>
+</head>
+<body>
+
+<!-- ============ TOOLBAR (screen only) ============ -->
+<header class="toolbar no-print">
+  <div class="toolbar-inner">
+    <a class="brand" href="#cover"><img src="assets/nglg-crest.jpg" alt=""><span>NGLG</span></a>
+    <nav class="toc-links" id="navLinks" aria-label="Sections"></nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language" id="langGroup">
+        <button type="button" data-lang="en" title="English"><svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbt"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbt)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>EN</span></button>
+        <button type="button" data-lang="es" title="Español"><svg viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg><span>ES</span></button>
+        <button type="button" data-lang="pt" title="Português (Brasil)"><svg viewBox="0 0 720 504" aria-hidden="true"><rect width="720" height="504" fill="#009c3b"/><path d="M360 42 678 252 360 462 42 252z" fill="#ffdf00"/><circle cx="360" cy="252" r="110" fill="#002776"/><path d="M252 230c70-14 160-4 218 36l-6 14c-56-38-142-48-210-34z" fill="#fff"/></svg><span>BR</span></button>
+      </div>
+      <button type="button" class="btn-print" id="btnPrint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="exportPdf"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="doc">
+
+<!-- ============ COVER ============ -->
+<section class="page cover" id="cover">
+  <div class="cover-frame">
+    <p class="cover-motto" data-t="motto"></p>
+    <img class="cover-crest" src="assets/nglg-crest.jpg" alt="Coat of arms of the National Grand Lodge of Greece">
+    <p class="cover-kicker" data-t="coverKicker"></p>
+    <h1 class="cover-title"><span data-t="coverTitle1"></span><span data-t="coverTitle2"></span></h1>
+    <div class="ornament"><span></span><i>◆</i><span></span></div>
+    <p class="cover-sub" data-t="coverSub"></p>
+    <ul class="cover-meta" data-list="coverMeta"></ul>
+    <div class="cover-stats" id="coverStats"></div>
+    <div class="cover-issued">
+      <span data-t="coverIssued"></span>
+      <strong>RW. Bro Dimitrios Skiadopoulos</strong>
+      <em data-t="attSign"></em>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section class="page toc-page" id="contents">
+  <div class="wrap">
+    <h2 class="toc-title" data-t="tocTitle"></h2>
+    <ol class="toc-list" id="tocList"></ol>
+  </div>
+</section>
+
+<!-- ============ 1. SUMMARY ============ -->
+<section class="page chapter" id="summary" data-ch="1">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="sumEyebrow"></p><h2 data-t="sumTitle"></h2></header>
+    <div class="two-col">
+      <div class="prose"><p class="lead dropcap" data-t="sumP1"></p><p data-t="sumP2"></p></div>
+      <div class="stat-grid" id="sumStats"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. PRINCIPLES ============ -->
+<section class="page chapter" id="principles" data-ch="2">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="prinEyebrow"></p><h2 data-t="prinTitle"></h2><p class="ch-lead" data-t="prinLead"></p></header>
+    <ol class="principles" id="principlesList"></ol>
+    <h3 class="sub-head" data-t="conductTitle"></h3>
+    <div class="card-row" id="conductList"></div>
+  </div>
+</section>
+
+<!-- ============ 3. ORIGIN ============ -->
+<section class="page chapter" id="origin" data-ch="3">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="origEyebrow"></p><h2 data-t="origTitle"></h2></header>
+    <div class="origin-grid">
+      <aside class="plaque">
+        <div class="plaque-date" data-t="origPlaqueDate"></div>
+        <div class="plaque-place" data-t="origPlaquePlace"></div>
+        <div class="plaque-rule"></div>
+        <div class="plaque-figs" data-t="origPlaqueFigs"></div>
+        <p class="plaque-note" data-t="origPlaqueNote"></p>
+      </aside>
+      <div class="prose">
+        <p class="dropcap" data-t="origP1"></p>
+        <p data-t="origP2"></p>
+        <p data-t="origP3"></p>
+        <p data-t="origP4"></p>
+      </div>
+    </div>
+    <h3 class="sub-head" data-t="foundersTitle"></h3>
+    <p class="sub-lead" data-t="foundersLead"></p>
+    <div class="founders" id="foundersList"></div>
+    <p class="note" data-t="minutesNote"></p>
+  </div>
+</section>
+
+<!-- ============ 4. RECOGNITION HISTORY ============ -->
+<section class="page chapter" id="recognition" data-ch="4">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="recEyebrow"></p><h2 data-t="recTitle"></h2></header>
+    <ol class="timeline" id="timelineList"></ol>
+    <h3 class="sub-head" data-t="coexTitle"></h3>
+    <div class="two-col coex">
+      <div class="prose"><p data-t="coexP1"></p><p data-t="coexP2"></p></div>
+      <aside class="callout"><h4 data-t="keyTitle"></h4><p data-t="keyText"></p><blockquote data-t="keyQuote"></blockquote></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TODAY ============ -->
+<section class="page chapter" id="today" data-ch="5">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="todayEyebrow"></p><h2 data-t="todayTitle"></h2></header>
+    <figure class="photo photo-wide" data-slot="meeting" data-default="assets/photos/grand-meeting.jpg">
+      <div class="photo-box"></div>
+      <figcaption data-t="meetingCaption"></figcaption>
+    </figure>
+    <div class="tiles" id="tilesList"></div>
+    <div class="card-row two">
+      <article class="card"><h4 data-t="eduTitle"></h4><p data-t="eduText"></p></article>
+      <article class="card"><h4 data-t="meetTitle"></h4><p data-t="meetText"></p></article>
+    </div>
+    <h3 class="sub-head" data-t="citiesTitle"></h3>
+    <ul class="chips" data-list="cities"></ul>
+  </div>
+</section>
+
+<!-- ============ 6. LEADERSHIP ============ -->
+<section class="page chapter" id="leadership" data-ch="6">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="leadEyebrow"></p><h2 data-t="leadTitle"></h2><p class="ch-lead" data-t="leadLead"></p></header>
+    <div class="portraits">
+      <figure class="photo photo-portrait" data-slot="gm" data-default="assets/photos/grand-master.jpg">
+        <div class="photo-box"></div>
+        <figcaption><span class="role" data-t="gmRole"></span><span class="name" data-t="gmName"></span></figcaption>
+      </figure>
+      <figure class="photo photo-portrait" data-slot="gs" data-default="assets/photos/grand-secretary.jpg">
+        <div class="photo-box"></div>
+        <figcaption><span class="role" data-t="gsRole"></span><span class="name" data-t="gsName"></span></figcaption>
+      </figure>
+    </div>
+    <h3 class="sub-head center" data-t="gmListTitle"></h3>
+    <ol class="gm-list" id="gmList"></ol>
+  </div>
+</section>
+
+<!-- ============ 7. TEMPLES ============ -->
+<section class="page chapter" id="temples" data-ch="7">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="templesEyebrow"></p><h2 data-t="templesTitle"></h2><p class="ch-lead" data-t="templesLead"></p></header>
+    <div class="temples" id="templesList"></div>
+    <p class="note small" data-t="templesSource"></p>
+  </div>
+</section>
+
+<!-- ============ 8. REGISTER ============ -->
+<section class="page chapter" id="register" data-ch="8">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="regEyebrow"></p><h2 data-t="regTitle"></h2><p class="ch-lead" data-t="regLead"></p></header>
+    <div class="region-chart" id="regionChart" aria-label="Recognitions by region"></div>
+    <div class="reg-tools no-print">
+      <input type="search" id="regSearch" autocomplete="off">
+      <span class="reg-count" id="regCount"></span>
+    </div>
+    <table class="register">
+      <colgroup><col class="c-no"><col class="c-country"><col></colgroup>
+      <thead><tr id="regHead"></tr></thead>
+      <tbody id="regBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 9. GOVERNANCE ============ -->
+<section class="page chapter" id="governance" data-ch="9">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="govEyebrow"></p><h2 data-t="govTitle"></h2></header>
+    <div class="prose cols"><p data-t="govP1"></p><p data-t="govP2"></p></div>
+    <h3 class="sub-head" data-t="bodiesTitle"></h3>
+    <p class="sub-lead" data-t="bodiesLead"></p>
+    <ol class="bodies" data-list="bodies"></ol>
+  </div>
+</section>
+
+<!-- ============ 10. CONCLUSION ============ -->
+<section class="page chapter" id="conclusion" data-ch="10">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="conEyebrow"></p><h2 data-t="conTitle"></h2><p class="ch-lead" data-t="conLead"></p></header>
+    <div class="pillars" id="pillarsList"></div>
+  </div>
+</section>
+
+<!-- ============ 11. ATTESTATION / SIGNATURE ============ -->
+<section class="page chapter attestation" id="attestation" data-ch="11">
+  <div class="wrap">
+    <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="attEyebrow"></p><h2 data-t="attTitle"></h2></header>
+    <div class="att-body">
+      <img class="att-crest" src="assets/nglg-crest.jpg" alt="">
+      <p class="att-text" data-t="attText"></p>
+      <div class="signature">
+        <div class="sig-place"><span data-t="attPlace"></span>, <span id="sigDate"></span></div>
+        <div class="sig-line"></div>
+        <div class="sig-name" data-t="attSigner"></div>
+        <div class="sig-role" data-t="attSign"></div>
+        <div class="sig-org" data-t="attOrg"></div>
+      </div>
+      <h3 class="sub-head center" data-t="contactTitle"></h3>
+      <dl class="contact" id="contactList"></dl>
+      <p class="tagline" data-t="tagline"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot no-print"><span data-t="runFooter"></span></footer>
+
+<input type="file" id="photoInput" accept="image/*" hidden>
+
+<script src="assets/data-recognitions.js"></script>
+<script src="assets/data-nglg.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
