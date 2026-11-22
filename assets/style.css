@@ -193,6 +193,11 @@ main{padding:28px 0 40px}
 .temple-body .gr{font-size:12.5px;color:var(--muted);letter-spacing:.02em}
 .temple-body .ref{display:inline-block;margin-top:6px;font-family:var(--sans);font-size:10.5px;color:var(--burgundy);border:1px solid rgba(107,31,46,.35);border-radius:3px;padding:1px 6px}
 
+.temple-gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.temple-gallery figure{margin:0;border:1px solid var(--gold-2);background:#fff;padding:4px;grid-column:span 2}
+.temple-gallery figure:nth-child(4){grid-column:2 / span 2}
+.temple-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
 /* ---------- register ---------- */
 .region-chart{display:grid;gap:8px;margin-bottom:26px;max-width:720px}
 .rc-row{display:grid;grid-template-columns:230px 1fr 36px;gap:10px;align-items:center;font-size:15px}
@@ -265,6 +270,8 @@ main{padding:28px 0 40px}
   .principles,.card-row,.card-row.two,.founders,.tiles,.stat-grid,.pillars{grid-template-columns:1fr}
   .pillar{border-right:0;border-bottom:1px solid var(--line)}
   .temples{grid-template-columns:1fr 1fr}
+  .temple-gallery{grid-template-columns:1fr 1fr}
+  .temple-gallery figure,.temple-gallery figure:nth-child(4){grid-column:auto}
   .cover-stats{grid-template-columns:1fr 1fr}
   .cover-stats div:nth-child(2){border-right:0}
   .cover-stats div:nth-child(-n+2){border-bottom:1px solid rgba(201,164,74,.3)}
@@ -353,6 +360,8 @@ main{padding:28px 0 40px}
   .tile{padding:3.5mm}.tile b{font-size:17pt}
   .gm-list li{font-size:10.5pt;padding:1.6mm 0}
   .temples{grid-template-columns:repeat(5,minmax(0,1fr));gap:2.5mm}
+  .temple-gallery{gap:3mm}
+  .temple-gallery figure{padding:1mm;break-inside:avoid}
   .temple-body .gr{overflow-wrap:anywhere}
   .temple-img{aspect-ratio:16/9}
   .temple-img svg{width:34%}

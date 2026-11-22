@@ -49,7 +49,7 @@ Open the page directly in a chosen language:
 | IV | **Chain of Recognition** | Timeline from 1986 to today, showing the emblems of UGLE (1993), Ireland (1994) and Scotland (1995), coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |
 | V | **The NGLG Today** | Wide photograph of the **Grand Meeting**, key figures, the Conference of Worshipful Masters, the Grand Meetings, and the cities where the NGLG is present |
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986 |
-| VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG |
+| VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
 | VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
 | IX | **Governance** | Administrative and Masonic structure; the 14 Masonic bodies and independent orders |
 | X | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
@@ -107,7 +107,7 @@ There are two ways to add them:
 - **For everyone:** upload the files to the `assets/photos/` folder on GitHub (*Add file → Upload files*), using exactly these names. They then appear on the live page and in every exported PDF.
 - **On one computer only:** click **Add photograph** on the page. The photo is stored only in that browser.
 
-**Temple photographs:** put the image in `assets/photos/` and enter its path in the `photo` field of the temple in `assets/data-nglg.js`, for example `photo: "assets/photos/temple-athens.jpg"`.
+**Temple photographs:** the gallery in chapter VII shows the photos listed in `NGLG_TEMPLE_GALLERY` in `assets/data-nglg.js` (files in `assets/photos/temples/`). To show a photo on a specific temple card, enter its path in that temple's `photo` field, for example `photo: "assets/photos/temples/temple-1.jpg"`.
 
 ---
 

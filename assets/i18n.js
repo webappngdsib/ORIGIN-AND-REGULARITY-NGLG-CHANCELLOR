@@ -114,6 +114,7 @@ en: {
   templesLead: "Twenty Masonic buildings, owned or administered by the National Grand Lodge of Greece, house the work of its Lodges from Athens to the islands and Cyprus.",
   templeWord: "Masonic Temple of",
   templeRef: "Lodge ref.",
+  galleryTitle: "Inside the Masonic Temples",
   templesSource: "Source: NGLG lodge-buildings directory · nglgreece.org/el/lodge-buildings",
 
   regEyebrow: "International Standing",
@@ -286,6 +287,7 @@ es: {
   templesLead: "Veinte edificios masónicos, en propiedad o administrados por la Gran Logia Nacional de Grecia, acogen los trabajos de sus Logias desde Atenas hasta las islas y Chipre.",
   templeWord: "Templo Masónico de",
   templeRef: "Ref. Logia",
+  galleryTitle: "En el interior de los Templos Masónicos",
   templesSource: "Fuente: directorio de edificios de la GLNG · nglgreece.org/el/lodge-buildings",
 
   regEyebrow: "Posición Internacional",
@@ -458,6 +460,7 @@ pt: {
   templesLead: "Vinte edifícios maçônicos, próprios ou administrados pela Grande Loja Nacional da Grécia, acolhem os trabalhos das suas Lojas de Atenas às ilhas e a Chipre.",
   templeWord: "Templo Maçônico de",
   templeRef: "Ref. Loja",
+  galleryTitle: "No interior dos Templos Maçônicos",
   templesSource: "Fonte: diretório de edifícios da GLNG · nglgreece.org/el/lodge-buildings",
 
   regEyebrow: "Posição Internacional",

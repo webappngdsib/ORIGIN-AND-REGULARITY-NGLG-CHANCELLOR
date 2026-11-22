@@ -108,6 +108,9 @@
     }).join("");
 
     renderTemples();
+    $("templeGallery").innerHTML = (window.NGLG_TEMPLE_GALLERY || []).map(function (src) {
+      return '<figure><img src="' + esc(src) + '" alt="" loading="lazy"></figure>';
+    }).join("");
     renderRegister();
 
     $("pillarsList").innerHTML = T.pillars.map(function (p, k) {

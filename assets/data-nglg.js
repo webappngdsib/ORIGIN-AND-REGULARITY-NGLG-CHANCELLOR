@@ -26,6 +26,17 @@ window.NGLG_TEMPLES = [
   { gr: "ΤΕΚΤΟΝΙΚΟ ΜΕΓΑΡΟ ΚΥΠΡΟΥ",        city: "cyprus",       ref: "",   photo: "" }
 ];
 
+/* Photographs of NGLG temple interiors (gallery in chapter VII).
+   To show a photo on a specific temple card instead, put its path in that
+   temple's "photo" field above. */
+window.NGLG_TEMPLE_GALLERY = [
+  "assets/photos/temples/temple-1.jpg",
+  "assets/photos/temples/temple-2.jpg",
+  "assets/photos/temples/temple-3.jpg",
+  "assets/photos/temples/temple-4.jpg",
+  "assets/photos/temples/temple-5.jpg"
+];
+
 /* City names per language: [en, es, pt] */
 window.NGLG_CITIES = {
   athens:       ["Athens", "Atenas", "Atenas"],
