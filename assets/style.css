@@ -134,6 +134,10 @@ main{padding:28px 0 40px}
 .timeline li::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold-2);border:2px solid var(--ivory);box-shadow:0 0 0 1px var(--gold-2)}
 .timeline .yr{font-family:var(--display);color:var(--navy);font-weight:700;font-size:19px}
 .timeline p{margin:2px 0 0;font-size:17px}
+.timeline li.has-emblem{display:flex;align-items:center;gap:22px;justify-content:space-between}
+.timeline .tl-text{flex:1;min-width:0}
+.timeline .tl-emblem{flex:none;width:auto;height:96px;max-width:96px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(19,32,63,.18))}
+.register .reg-emblem{display:inline-block;height:26px;width:auto;vertical-align:middle;margin:-4px 8px -4px 0}
 .callout{background:var(--navy);color:#fff;padding:24px 24px 20px}
 .callout h4{font-family:var(--display);color:var(--gold-2);font-size:16px;margin-bottom:10px;letter-spacing:.04em}
 .callout p{margin:0 0 14px;font-size:16px;line-height:1.55;color:#E3E6F0}
@@ -260,6 +264,7 @@ main{padding:28px 0 40px}
   .portraits{grid-template-columns:minmax(0,240px);gap:30px}
   .gm-list,.bodies,.prose.cols{columns:1}
   .rc-row{grid-template-columns:120px 1fr 30px;font-size:13px}
+  .timeline .tl-emblem{height:64px;max-width:64px}
   .register col.c-country{width:110px}
   .register{font-size:14px}
   .toc-list .ey{display:none}
@@ -306,6 +311,9 @@ main{padding:28px 0 40px}
   .principles p,.card p,.pillar p{font-size:10pt}
   .principles h4{font-size:10.5pt}
   .timeline p{font-size:11pt}
+  .timeline .tl-emblem{height:22mm;max-width:22mm;filter:none}
+  .timeline li{padding-bottom:4mm}
+  .register .reg-emblem{height:6mm}
   .stat-grid b{font-size:17pt}
   .photo-wide .photo-box{aspect-ratio:auto;height:46mm}
   #today .sub-head{margin-top:6mm}

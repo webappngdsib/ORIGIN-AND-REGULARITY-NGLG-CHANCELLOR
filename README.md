@@ -46,7 +46,7 @@ Open the page directly in a chosen language:
 | I | **Executive Summary** | The case for regular recognition |
 | II | **The Eight Basic Principles** | The basic principles for Grand Lodge recognition (as in the UGLE Book of Constitutions), plus membership, conduct and sovereignty |
 | III | **A Regular Origin — 7 June 1986** | The foundation by six regularly constituted Lodges, the 1993 recognition by UGLE, the Constitution, and the six founding Lodges |
-| IV | **Chain of Recognition** | Timeline from 1986 to today (UGLE 1993, Ireland 1994, Scotland 1995, 1999, today), coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |
+| IV | **Chain of Recognition** | Timeline from 1986 to today, showing the emblems of UGLE (1993), Ireland (1994) and Scotland (1995), coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |
 | V | **The NGLG Today** | Wide photograph of the **Grand Meeting**, key figures, the Conference of Worshipful Masters, the Grand Meetings, and the cities where the NGLG is present |
 | VI | **Leadership** | Photographs of the **Grand Master** and the **Grand Secretary**; the 14 Grand Masters since 1986 |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG |
@@ -133,6 +133,7 @@ assets/
   data-recognitions.js         The 102 mutual recognitions
   data-nglg.js                 Temples, Grand Masters, founding Lodges, names
   nglg-crest.jpg               Coat of arms of the NGLG
+  emblems/                     Emblems of UGLE, the Grand Lodge of Ireland and the Grand Lodge of Scotland
   photos/                      Grand Meeting, Grand Master, Grand Secretary and temple photographs
 pdf/                           Ready-made A4 PDFs in the three languages
 ```
