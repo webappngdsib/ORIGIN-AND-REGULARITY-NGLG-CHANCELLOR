@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petition for Mutual Recognition — National Grand Lodge of Greece</title>
+<meta name="author" content="RW. Bro Dimitrios Skiadopoulos, Grand Secretary">
+<link rel="icon" href="assets/nglg-crest.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#13203F; --navy-3:#2A3E6E; --gold:#B08A2E; --gold-2:#C9A44A; --gold-lt:#E6D199;
+  --ivory:#FBF8F1; --vellum:#F4EEDF; --line:#E3D8BC; --ink:#1E2230; --muted:#5E6170; --burgundy:#6B1F2E;
+  --serif:"EB Garamond","Garamond",Georgia,serif; --display:"Cinzel","EB Garamond",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#E9E4D6;color:var(--ink);font-family:var(--serif);font-size:17.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+
+/* toolbar */
+.toolbar{position:sticky;top:0;z-index:20;background:rgba(19,32,63,.97);border-bottom:1px solid rgba(201,164,74,.45);font-family:var(--sans);color:#C9CEE0}
+.tb-row{max-width:1100px;margin:0 auto;padding:10px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.back{color:#fff;text-decoration:none;font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(201,164,74,.5);border-radius:6px;padding:8px 12px}
+.back:hover{background:rgba(255,255,255,.08)}
+.lang{display:flex;border:1px solid rgba(201,164,74,.5);border-radius:6px;overflow:hidden}
+.lang button{display:flex;align-items:center;gap:6px;background:transparent;border:0;color:#C9CEE0;font:600 11.5px var(--sans);padding:7px 10px;cursor:pointer}
+.lang button+button{border-left:1px solid rgba(201,164,74,.35)}
+.lang svg{width:22px;height:15px;border-radius:2px}
+.lang button[aria-pressed="true"]{background:var(--gold-2);color:var(--navy)}
+.btn{margin-left:auto;display:flex;align-items:center;gap:7px;background:var(--gold-2);color:var(--navy);border:0;border-radius:6px;padding:9px 15px;font:700 12px var(--sans);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.btn:hover{background:var(--gold-lt)}
+.btn svg{width:16px;height:16px}
+.fields{max-width:1100px;margin:0 auto;padding:0 18px 12px;display:grid;grid-template-columns:2fr 1.4fr 1.2fr 1fr;gap:8px 12px}
+.fields label{display:flex;flex-direction:column;gap:3px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold-lt)}
+.fields input{font:15px var(--serif);padding:7px 10px;border-radius:5px;border:1px solid rgba(201,164,74,.5);background:#0E1832;color:#fff}
+.fields input::placeholder{color:#7F89A8}
+.hint{grid-column:1/-1;font-size:11.5px;color:#8E97B5}
+
+/* sheets */
+main{padding:28px 12px 50px}
+.sheet{background:#fff;width:210mm;min-height:297mm;margin:0 auto 26px;padding:16mm 18mm 20mm;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 34px rgba(40,30,10,.14);position:relative}
+.sheet::before{content:"";position:absolute;inset:7mm;border:1px solid var(--line);pointer-events:none}
+.sheet::after{content:"";position:absolute;inset:8.2mm;border:.5px solid rgba(201,164,74,.45);pointer-events:none}
+
+/* letterhead */
+.head{display:grid;grid-template-columns:30mm 1fr 30mm;align-items:center;gap:6mm;padding-bottom:5mm;border-bottom:2px solid var(--gold-2);position:relative}
+.head::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:var(--gold-2)}
+.head img{width:30mm;border-radius:6px;border:1px solid var(--gold-2)}
+.head-c{text-align:center}
+.motto{font-family:var(--display);letter-spacing:.3em;color:var(--gold);font-size:10.5px}
+.org{font-family:var(--display);color:var(--navy);font-size:23px;font-weight:700;letter-spacing:.04em;line-height:1.15;margin-top:3px}
+.orgsub{font-family:var(--sans);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--burgundy);font-weight:700;margin-top:4px}
+.orgaddr{font-size:12.5px;color:var(--muted);margin-top:3px}
+.head-r{text-align:right;font-family:var(--display);font-size:10px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.head-r b{display:block;font-size:22px;color:var(--navy);letter-spacing:.04em}
+
+.meta{display:flex;justify-content:space-between;gap:10mm;margin-top:9mm;font-size:15px}
+.meta .ref{color:var(--muted)}
+.recipient{margin-top:6mm;font-size:16px;line-height:1.45}
+.recipient .to{font-style:italic;color:var(--muted)}
+.recipient .gm{font-weight:600}
+.recipient .gl{font-family:var(--display);color:var(--navy);font-size:17px;font-weight:600}
+.blank{display:inline-block;min-width:70mm;border-bottom:1px dotted var(--muted);height:1.1em;vertical-align:baseline}
+.subject{margin:8mm 0 6mm;font-family:var(--display);color:var(--navy);font-size:15.5px;font-weight:700;letter-spacing:.03em;text-align:center;padding:3mm 4mm;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.salutation{font-style:italic;font-size:17px;margin:0 0 4mm}
+.body p{margin:0 0 3.6mm;text-align:justify;hyphens:auto;font-size:16px;line-height:1.58}
+.body p:first-child::first-letter{font-family:var(--display);float:left;font-size:3em;line-height:.85;padding:4px 8px 0 0;color:var(--gold)}
+.closing{margin-top:6mm;font-size:16px;break-inside:avoid}
+.closing .c2{font-style:italic}
+.sign{margin-top:16mm;display:flex;align-items:flex-end;gap:10mm;break-inside:avoid}
+.sign-block{min-width:80mm}
+.sign-line{border-top:1px solid var(--ink);padding-top:2mm}
+.sign-name{font-family:var(--display);color:var(--navy);font-size:17px;font-weight:600}
+.sign-role{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:1mm}
+.sign-cmd{font-style:italic;color:var(--muted);font-size:13.5px;margin-top:1mm}
+.seal{width:30mm;height:30mm;border-radius:50%;border:1.5px dashed rgba(176,138,46,.7);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;flex:none}
+.encl{margin-top:9mm;font-size:13.5px;color:var(--muted);break-inside:avoid}
+.encl b{font-family:var(--sans);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--burgundy)}
+.encl ol{margin:1.5mm 0 0;padding-left:5mm}
+
+/* annex */
+.annex-head{text-align:center;margin:8mm 0 6mm}
+.annex-head .k{font-family:var(--sans);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--burgundy);font-weight:700}
+.annex-head h2{font-family:var(--display);color:var(--navy);font-size:21px;line-height:1.25;margin:2mm 0 0}
+.annex-head .orn{color:var(--gold-2);font-size:11px;margin-top:3mm;letter-spacing:.6em}
+.annex-intro{font-size:16px;text-align:justify;margin:0 0 5mm}
+.articles{list-style:none;padding:0;margin:0;counter-reset:a}
+.articles li{counter-increment:a;display:grid;grid-template-columns:16mm 1fr;gap:3mm;padding:3mm 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.articles li::before{content:"Art. " counter(a,upper-roman);font-family:var(--display);color:var(--burgundy);font-weight:700;font-size:12.5px;padding-top:2px}
+.articles h4{margin:0;font-family:var(--display);color:var(--navy);font-size:14px;letter-spacing:.03em}
+.articles p{margin:1mm 0 0;font-size:15px;line-height:1.5;text-align:justify}
+.annex-close{margin:5mm 0 0;font-style:italic;color:var(--muted);text-align:center;font-size:14.5px}
+.parties{display:grid;grid-template-columns:1fr 1fr;gap:10mm;margin-top:8mm;break-inside:avoid}
+.party h5{margin:0 0 6mm;font-family:var(--display);color:var(--navy);font-size:13.5px;text-align:center;letter-spacing:.03em;min-height:2.6em}
+.sl{margin-top:13mm;border-top:1px solid var(--ink);padding-top:1.5mm;text-align:center}
+.sl .r{font-family:var(--sans);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.sl .n{font-size:14px}
+.party .pd{margin-top:9mm;font-size:12.5px;color:var(--muted);border-top:1px dotted var(--muted);padding-top:1mm;text-align:center}
+.party .seal{margin:7mm auto 0}
+
+.site-foot{text-align:center;font-family:var(--sans);font-size:11.5px;color:#7D7663;padding-bottom:30px}
+
+@media screen and (max-width:860px){
+  .fields{grid-template-columns:1fr 1fr}
+  .sheet{width:auto;min-height:0;padding:12mm 8mm 14mm}
+  .sheet::before,.sheet::after{display:none}
+  .head{grid-template-columns:20mm 1fr;}
+  .head img{width:20mm}
+  .head-r{display:none}
+  .org{font-size:18px}
+  .parties{grid-template-columns:1fr}
+  .meta{flex-direction:column;gap:2mm}
+  .sign{flex-direction:column;align-items:flex-start}
+  .blank{min-width:40mm}
+  .lang span,.btn span{display:none}
+}
+
+/* print: A4 */
+@page{size:A4 portrait;margin:14mm 17mm 18mm}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;font-size:11pt}
+  .toolbar,.site-foot{display:none!important}
+  main{padding:0}
+  .sheet{box-shadow:none;margin:0;width:auto;min-height:0;padding:0;break-after:page}
+  .sheet:last-child{break-after:auto}
+  .sheet::before,.sheet::after{display:none}
+  .blank{min-width:70mm}
+  .head::after{display:none}
+  #annex .head{grid-template-columns:18mm 1fr 18mm;padding-bottom:3mm}
+  #annex .head img{width:18mm}
+  #annex .org{font-size:17px}
+  #annex .head-r b{font-size:15px}
+  .annex-head{margin:3mm 0 3mm}
+  .annex-head h2{font-size:17px}
+  .annex-head .orn{margin-top:1.5mm}
+  .annex-intro{font-size:14.5px;margin-bottom:3mm}
+  .articles li{padding:1.3mm 0;grid-template-columns:14mm 1fr}
+  .articles p{font-size:13.5px;line-height:1.42}
+  .annex-close{margin-top:3mm;font-size:13px}
+  .parties{margin-top:3mm;gap:12mm}
+  .party h5{margin-bottom:2mm;min-height:2.4em}
+  .sl{margin-top:7mm}
+  .party .pd{margin-top:5mm}
+  .party .seal{width:16mm;height:16mm;margin-top:3mm;font-size:7px}
+  .party h5{min-height:0;font-size:12px}
+}
+</style>
+<style id="runStyle"></style>
+</head>
+<body>
+
+<header class="toolbar">
+  <div class="tb-row">
+    <a class="back" id="backLink" href="index.html">← <span data-t="back"></span></a>
+    <div class="lang" id="langGroup" role="group" aria-label="Language">
+      <button type="button" data-lang="en" title="English"><svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbt"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbt)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>EN</span></button>
+      <button type="button" data-lang="es" title="Español"><svg viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg><span>ES</span></button>
+      <button type="button" data-lang="pt" title="Português (Brasil)"><svg viewBox="0 0 720 504" aria-hidden="true"><rect width="720" height="504" fill="#009c3b"/><path d="M360 42 678 252 360 462 42 252z" fill="#ffdf00"/><circle cx="360" cy="252" r="110" fill="#002776"/><path d="M252 230c70-14 160-4 218 36l-6 14c-56-38-142-48-210-34z" fill="#fff"/></svg><span>BR</span></button>
+    </div>
+    <button type="button" class="btn" id="btnPrint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="exportPdf"></span></button>
+  </div>
+  <div class="fields">
+    <label><span data-t="fGL"></span><input id="inGL" autocomplete="off"></label>
+    <label><span data-t="fGM"></span><input id="inGM" autocomplete="off"></label>
+    <label><span data-t="fPlace"></span><input id="inPlace" autocomplete="off"></label>
+    <label><span data-t="fRef"></span><input id="inRef" autocomplete="off"></label>
+    <div class="hint" data-t="hint"></div>
+  </div>
+</header>
+
+<main>
+  <!-- ========== LETTER ========== -->
+  <article class="sheet" id="letter">
+    <header class="head">
+      <img src="assets/nglg-crest.jpg" alt="Coat of arms of the National Grand Lodge of Greece">
+      <div class="head-c">
+        <div class="motto">ΕΓΩ ΕΙΜΙ Ο ΩΝ</div>
+        <div class="org" data-t="orgName"></div>
+        <div class="orgsub" data-t="orgSub"></div>
+        <div class="orgaddr" data-t="orgAddr"></div>
+      </div>
+      <div class="head-r"><span data-t="est"></span><b>1986</b><span data-t="estPlace"></span></div>
+    </header>
+
+    <div class="meta">
+      <span class="ref"><span data-t="refLabel"></span> <span id="vRef"></span></span>
+      <span id="vDate"></span>
+    </div>
+
+    <div class="recipient">
+      <div class="to" data-t="to"></div>
+      <div class="gm" id="vGM"></div>
+      <div class="gl" id="vGL"></div>
+      <div id="vPlace"></div>
+    </div>
+
+    <div class="subject" data-t="subject"></div>
+    <p class="salutation" data-t="salutation"></p>
+    <div class="body" id="vBody"></div>
+
+    <div class="closing"><div data-t="closing"></div><div class="c2" data-t="closing2"></div></div>
+    <div class="sign">
+      <div class="sign-block">
+        <div class="sign-line"><div class="sign-name" data-t="signer"></div></div>
+        <div class="sign-role" data-t="signerRole"></div>
+        <div class="sign-cmd" data-t="byCommand"></div>
+      </div>
+      <div class="seal" data-t="seal"></div>
+    </div>
+    <div class="encl"><b data-t="enclTitle"></b><ol id="vEncl"></ol></div>
+  </article>
+
+  <!-- ========== ANNEX: INSTRUMENT ========== -->
+  <article class="sheet" id="annex">
+    <header class="head">
+      <img src="assets/nglg-crest.jpg" alt="">
+      <div class="head-c">
+        <div class="motto">ΕΓΩ ΕΙΜΙ Ο ΩΝ</div>
+        <div class="org" data-t="orgName"></div>
+        <div class="orgsub" data-t="orgSub"></div>
+      </div>
+      <div class="head-r"><span data-t="est"></span><b>1986</b><span data-t="estPlace"></span></div>
+    </header>
+    <div class="annex-head">
+      <div class="k" data-t="annexKicker"></div>
+      <h2 data-t="annexTitle"></h2>
+      <div class="orn">◆ ◆ ◆</div>
+    </div>
+    <p class="annex-intro" id="vAnnexIntro"></p>
+    <ol class="articles" id="vArticles"></ol>
+    <p class="annex-close" data-t="annexClose"></p>
+    <div class="parties">
+      <div class="party">
+        <h5 data-t="forNGLG"></h5>
+        <div class="sl"><div class="n" data-t="ngmName"></div><div class="r" data-t="gmRole"></div></div>
+        <div class="sl"><div class="n" data-t="signer"></div><div class="r" data-t="gsRole"></div></div>
+        <div class="pd" data-t="placeDate"></div>
+        <div class="seal" data-t="seal"></div>
+      </div>
+      <div class="party">
+        <h5 id="vForGL"></h5>
+        <div class="sl"><div class="n" id="vGM2">&nbsp;</div><div class="r" data-t="gmRole"></div></div>
+        <div class="sl"><div class="n">&nbsp;</div><div class="r" data-t="gsRole"></div></div>
+        <div class="pd" data-t="placeDate"></div>
+        <div class="seal" data-t="seal"></div>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="site-foot"><span data-t="runFooter"></span></footer>
+
+<script src="assets/letter-i18n.js"></script>
+<script>
+(function () {
+  "use strict";
+  var L = window.NGLG_LETTER, LANGS = ["en", "es", "pt"], lang = "en", T = L.en;
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; }
+  var BLANK = '<span class="blank"></span>';
+  var FIELDS = ["GL", "GM", "Place", "Ref"];
+
+  function val(f) { return $("in" + f).value.trim(); }
+  function glHtml() { return val("GL") ? esc(val("GL")) : BLANK; }
+
+  function render() {
+    document.documentElement.lang = T.htmlLang;
+    document.title = T.docTitle;
+    var n = document.querySelectorAll("[data-t]");
+    for (var i = 0; i < n.length; i++) { var v = T[n[i].dataset.t]; if (v !== undefined) n[i].innerHTML = v; }
+    $("inGL").placeholder = T.phGL; $("inGM").placeholder = T.phGM; $("inPlace").placeholder = T.phPlace;
+    $("inRef").placeholder = "NGLG/GS/" + new Date().getFullYear() + "/…";
+
+    $("vRef").textContent = val("Ref") || ("NGLG/GS/" + new Date().getFullYear() + "/………");
+    $("vDate").textContent = (lang === "en" ? "Athens, " : "Atenas, ") +
+      new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
+    $("vGM").innerHTML = val("GM") ? esc(val("GM")) : BLANK;
+    $("vGL").innerHTML = glHtml();
+    $("vPlace").innerHTML = val("Place") ? esc(val("Place")) : BLANK;
+    $("vBody").innerHTML = T.body.map(function (p) { return "<p>" + p.split("{GL}").join(glHtml()) + "</p>"; }).join("");
+    $("vEncl").innerHTML = T.encl.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("");
+    $("vAnnexIntro").innerHTML = T.annexIntro.split("{GL}").join(glHtml());
+    $("vArticles").innerHTML = T.articles.map(function (a) { return "<li><div><h4>" + esc(a[0]) + "</h4><p>" + esc(a[1]) + "</p></div></li>"; }).join("");
+    $("vForGL").innerHTML = T.forGL.split("{GL}").join(val("GL") ? esc(val("GL")) : "…………………………");
+    $("vGM2").innerHTML = val("GM") ? esc(val("GM")) : "&nbsp;";
+    $("runStyle").textContent = "@page{@bottom-left{content:" + JSON.stringify(T.runFooter) +
+      ";font-family:'EB Garamond',Georgia,serif;font-size:8pt;color:#5E6170}@bottom-right{content:counter(page) ' / ' counter(pages);font-family:'Cinzel',Georgia,serif;font-size:8pt;color:#B08A2E}}";
+    $("backLink").href = "index.html?lang=" + lang;
+  }
+
+  function setLang(l) {
+    lang = l; T = L[l]; store("nglg.lang", l);
+    var b = document.querySelectorAll("#langGroup button");
+    for (var i = 0; i < b.length; i++) b[i].setAttribute("aria-pressed", b[i].dataset.lang === l ? "true" : "false");
+    render();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var q = new URLSearchParams(location.search);
+    FIELDS.forEach(function (f) {
+      var el = $("in" + f);
+      el.value = q.get(f.toLowerCase()) || store("nglg.letter." + f) || "";
+      el.addEventListener("input", function () { store("nglg.letter." + f, el.value); render(); });
+    });
+    $("langGroup").addEventListener("click", function (e) { var b = e.target.closest("button[data-lang]"); if (b) setLang(b.dataset.lang); });
+    $("btnPrint").addEventListener("click", function () { window.print(); });
+    var ql = q.get("lang"), sl = store("nglg.lang");
+    setLang(LANGS.indexOf(ql) > -1 ? ql : LANGS.indexOf(sl) > -1 ? sl : "en");
+  });
+})();
+</script>
+</body>
+</html>

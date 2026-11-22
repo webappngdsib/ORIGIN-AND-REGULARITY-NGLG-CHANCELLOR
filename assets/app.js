@@ -127,6 +127,7 @@
 
     $("sigDate").textContent = new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
     $("regSearch").placeholder = T.regSearch;
+    $("btnLetter").href = "letter.html?lang=" + lang;
 
     renderPhotos();
     setRunningFooter();

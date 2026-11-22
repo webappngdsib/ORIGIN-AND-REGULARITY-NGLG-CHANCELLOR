@@ -78,6 +78,30 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 ---
 
+## ✉️ Petition letter for mutual recognition
+
+The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary. It petitions a Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**. Open it with the **Petition letter PDF** button in the top bar of the dossier.
+
+- **Recipient:** type the Grand Lodge, its Grand Master, the city and country, and a reference number. The letter fills in automatically.
+- **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
+- **Content:**
+  - letterhead of the NGLG
+  - the letter, signed by **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, by command of the Most Worshipful Grand Master
+  - list of enclosures
+  - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles and signature blocks for both Grand Lodges
+- **Export:** click **Export letter PDF** to get an A4 PDF of 3 pages.
+- **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
+
+Blank, ready-to-fill PDFs:
+
+| Language | File |
+|---|---|
+| 🇬🇧 English | [NGLG-Petition-Letter-EN.pdf](pdf/NGLG-Petition-Letter-EN.pdf) |
+| 🇪🇸 Español | [NGLG-Carta-de-Peticion-ES.pdf](pdf/NGLG-Carta-de-Peticion-ES.pdf) |
+| 🇧🇷 Português (Brasil) | [NGLG-Carta-de-Peticao-PT-BR.pdf](pdf/NGLG-Carta-de-Peticao-PT-BR.pdf) |
+
+---
+
 ## 🖨️ How to export the PDF yourself
 
 1. Open the live page and choose the language with the flag buttons 🇬🇧 🇪🇸 🇧🇷.
@@ -127,10 +151,12 @@ There are two ways to add them:
 
 ```
 index.html                     Main page
+letter.html                    Petition letter for mutual recognition (with annex)
 assets/
   style.css                    Screen and A4 print styling (navy · gold · ivory)
   app.js                       Language switching, register search, photo slots, PDF footer
   i18n.js                      All texts in English, Spanish and Brazilian Portuguese
+  letter-i18n.js               Texts of the petition letter in the three languages
   data-recognitions.js         The 102 mutual recognitions
   data-nglg.js                 Temples, Grand Masters, founding Lodges, names
   nglg-crest.jpg               Coat of arms of the NGLG

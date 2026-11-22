@@ -38,6 +38,8 @@ a{color:inherit}
 .btn-print{display:flex;align-items:center;gap:7px;background:var(--gold-2);color:var(--navy);border:0;border-radius:6px;padding:8px 14px;font:700 12px var(--sans);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .btn-print svg{width:16px;height:16px}
 .btn-print:hover{background:var(--gold-lt)}
+.btn-letter{text-decoration:none;background:transparent;color:var(--gold-lt);border:1px solid var(--gold-2)}
+.btn-letter:hover{background:rgba(201,164,74,.18)}
 
 /* ---------- pages (screen: sheets on a desk) ---------- */
 main{padding:28px 0 40px}
