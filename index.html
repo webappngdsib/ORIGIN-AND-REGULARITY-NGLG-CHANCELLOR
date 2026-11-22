@@ -142,14 +142,10 @@
 <section class="page chapter" id="leadership" data-ch="6">
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="leadEyebrow"></p><h2 data-t="leadTitle"></h2><p class="ch-lead" data-t="leadLead"></p></header>
-    <div class="portraits">
-      <figure class="photo photo-portrait" data-slot="gm" data-default="assets/photos/grand-master.jpg">
+    <div class="portraits single">
+      <figure class="photo photo-portrait photo-tall" data-slot="gm" data-default="assets/photos/grand-master.jpg">
         <div class="photo-box"></div>
         <figcaption><span class="role" data-t="gmRole"></span><span class="name" data-t="gmName"></span></figcaption>
-      </figure>
-      <figure class="photo photo-portrait" data-slot="gs" data-default="assets/photos/grand-secretary.jpg">
-        <div class="photo-box"></div>
-        <figcaption><span class="role" data-t="gsRole"></span><span class="name" data-t="gsName"></span></figcaption>
       </figure>
     </div>
     <h3 class="sub-head center" data-t="gmListTitle"></h3>
@@ -207,18 +203,26 @@
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="attEyebrow"></p><h2 data-t="attTitle"></h2></header>
     <div class="att-body">
-      <img class="att-crest" src="assets/nglg-crest.jpg" alt="">
       <p class="att-text" data-t="attText"></p>
-      <div class="signature">
-        <div class="sig-place"><span data-t="attPlace"></span>, <span id="sigDate"></span></div>
-        <div class="sig-line"></div>
-        <div class="sig-name" data-t="attSigner"></div>
-        <div class="sig-role" data-t="attSign"></div>
-        <div class="sig-org" data-t="attOrg"></div>
+      <div class="att-grid">
+        <figure class="photo photo-portrait photo-tall" data-slot="gs" data-default="assets/photos/grand-secretary.jpg">
+          <div class="photo-box"></div>
+          <figcaption><span class="role" data-t="gsRole"></span><span class="name" data-t="gsName"></span></figcaption>
+        </figure>
+        <div class="att-side">
+          <img class="att-crest" src="assets/nglg-crest.jpg" alt="">
+          <div class="signature">
+            <div class="sig-place"><span data-t="attPlace"></span>, <span id="sigDate"></span></div>
+            <div class="sig-line"></div>
+            <div class="sig-name" data-t="attSigner"></div>
+            <div class="sig-role" data-t="attSign"></div>
+            <div class="sig-org" data-t="attOrg"></div>
+          </div>
+          <h3 class="sub-head center" data-t="contactTitle"></h3>
+          <dl class="contact" id="contactList"></dl>
+          <p class="tagline" data-t="tagline"></p>
+        </div>
       </div>
-      <h3 class="sub-head center" data-t="contactTitle"></h3>
-      <dl class="contact" id="contactList"></dl>
-      <p class="tagline" data-t="tagline"></p>
     </div>
   </div>
 </section>

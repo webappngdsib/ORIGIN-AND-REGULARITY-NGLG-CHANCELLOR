@@ -84,7 +84,7 @@ en: {
   photoChange: "Change",
   photoRemove: "Remove",
   photoWideHint: "Wide photograph of the Grand Meeting · recommended 3:1 landscape",
-  photoPortraitHint: "Portrait photograph · recommended 4:5",
+  photoPortraitHint: "Portrait photograph · recommended 1:2 (full height)",
   tiles: [
     ["83", "Constituent Lodges", "Organised in 5 Provinces and 1 District"],
     ["1,800+", "Active Brethren", "In good standing, per Grand Secretariat records"],
@@ -256,7 +256,7 @@ es: {
   photoChange: "Cambiar",
   photoRemove: "Quitar",
   photoWideHint: "Fotografía panorámica de la Gran Tenida · recomendado 3:1 horizontal",
-  photoPortraitHint: "Retrato · recomendado 4:5",
+  photoPortraitHint: "Retrato · recomendado 1:2 (cuerpo entero)",
   tiles: [
     ["83", "Logias", "Organizadas en 5 Provincias y 1 Distrito"],
     ["1.800+", "Hermanos activos", "En plenitud de derechos, según la Gran Secretaría"],
@@ -428,7 +428,7 @@ pt: {
   photoChange: "Trocar",
   photoRemove: "Remover",
   photoWideHint: "Fotografia panorâmica da Grande Sessão · recomendado 3:1 horizontal",
-  photoPortraitHint: "Retrato · recomendado 4:5",
+  photoPortraitHint: "Retrato · recomendado 1:2 (corpo inteiro)",
   tiles: [
     ["83", "Lojas", "Organizadas em 5 Províncias e 1 Distrito"],
     ["1.800+", "Irmãos ativos", "Regulares, segundo a Grande Secretaria"],
