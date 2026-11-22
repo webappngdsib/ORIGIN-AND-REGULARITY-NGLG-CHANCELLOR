@@ -31,9 +31,9 @@ Open the page directly in a chosen language:
 
 | Language | File | Pages |
 |---|---|---|
-| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 20 |
-| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 20 |
-| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 20 |
+| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 21 |
+| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 21 |
+| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 21 |
 
 ---
 
@@ -51,7 +51,7 @@ Open the page directly in a chosen language:
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
 | VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
-| IX | **Governance** | Administrative and Masonic structure; the 14 Masonic bodies and independent orders |
+| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders |
 | X | **Charity and Masonic Heritage** | The Grand Charity of Greece (M.A.S.), with a link to [emste-charity.org](https://emste-charity.org/), and the NGLG Masonic stamps issued by ELTA in 2007 |
 | XI | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
 | XII | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
@@ -87,7 +87,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 The PDF layout works as follows:
 - The cover is a full page.
 - Every chapter starts on a new page.
-- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 20).
+- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 21).
 - The full register of 102 recognitions is always printed, even when a search is active.
 
 For the best result, use Google Chrome or Microsoft Edge.

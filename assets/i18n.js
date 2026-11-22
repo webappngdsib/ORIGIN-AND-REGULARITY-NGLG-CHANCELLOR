@@ -149,7 +149,8 @@ en: {
     "The Supreme Grand Chapter of Royal Arch Masons of Greece",
     "The Royal Order of Scotland",
     "The Supreme Council 33° for Greece, A.&A.S.R. (est. 1872)",
-    "The Grand Council of Knight Masons for Greece"
+    "The Grand Council of Knight Masons for Greece",
+    "Widows Sons"
   ],
 
   conEyebrow: "Conclusion",
@@ -333,7 +334,8 @@ es: {
     "Supremo Gran Capítulo de Masones del Real Arco de Grecia",
     "Real Orden de Escocia",
     "Supremo Consejo 33° para Grecia, R.E.A.A. (fundado en 1872)",
-    "Gran Consejo de Caballeros Masones de Grecia"
+    "Gran Consejo de Caballeros Masones de Grecia",
+    "Widows Sons (Hijos de la Viuda)"
   ],
 
   conEyebrow: "Conclusión",
@@ -517,7 +519,8 @@ pt: {
     "Supremo Grande Capítulo dos Maçons do Real Arco da Grécia",
     "Real Ordem da Escócia",
     "Supremo Conselho 33° para a Grécia, R.E.A.A. (fundado em 1872)",
-    "Grande Conselho dos Cavaleiros Maçons da Grécia"
+    "Grande Conselho dos Cavaleiros Maçons da Grécia",
+    "Widows Sons (Filhos da Viúva)"
   ],
 
   conEyebrow: "Conclusão",
