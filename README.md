@@ -87,7 +87,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 The PDF layout works as follows:
 - The cover is a full page.
 - Every chapter starts on a new page.
-- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 19).
+- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 20).
 - The full register of 102 recognitions is always printed, even when a search is active.
 
 For the best result, use Google Chrome or Microsoft Edge.
