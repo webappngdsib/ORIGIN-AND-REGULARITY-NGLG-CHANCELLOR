@@ -112,11 +112,11 @@
       var text = doc ? '<a class="tl-link" href="' + doc.url + '" target="_blank" rel="noopener">' + esc(x[1]) + "</a>" : esc(x[1]);
       var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + text + "</p>";
       if (doc) body += '<a class="tl-doc" href="' + doc.url + '" target="_blank" rel="noopener"><img src="' + doc.src +
-        '" alt="' + esc(T[doc.cap]) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T[doc.cap]) +
+        '" alt="' + esc(T[doc.cap]) + '"><span class="tl-doc-cap"><em>' + esc(T[doc.cap]) +
         '</em><span class="tl-doc-go">' + esc(T.ugleDocLink) + " ↗</span></span></a>";
       if (!em) return "<li>" + body + "</li>";
       return '<li class="has-emblem"><div class="tl-text">' + body + '</div><img class="tl-emblem" src="' + EMBLEMS[em].src +
-        '" alt="' + esc(EMBLEMS[em].alt) + '" loading="lazy"></li>';
+        '" alt="' + esc(EMBLEMS[em].alt) + '"></li>';
     }).join("");
 
     $("tilesList").innerHTML = T.tiles.map(function (x) {
@@ -130,12 +130,12 @@
 
     $("stampsList").innerHTML = STAMPS.map(function (n, k) {
       return '<figure class="' + (n.indexOf("sheet") === 0 ? "sheet" : "stamp") + '"><img src="assets/photos/stamps/' + n +
-        '.jpg" alt="" loading="lazy"><figcaption>' + esc(T.stampCaps[k]) + "</figcaption></figure>";
+        '.jpg" alt=""><figcaption>' + esc(T.stampCaps[k]) + "</figcaption></figure>";
     }).join("");
 
     renderTemples();
     $("templeGallery").innerHTML = (window.NGLG_TEMPLE_GALLERY || []).map(function (src) {
-      return '<figure><img src="' + esc(src) + '" alt="" loading="lazy"></figure>';
+      return '<figure><img src="' + esc(src) + '" alt=""></figure>';
     }).join("");
     renderRegister();
 
@@ -170,7 +170,7 @@
   function renderTemples() {
     $("templesList").innerHTML = window.NGLG_TEMPLES.map(function (t, k) {
       var img = t.photo
-        ? '<img src="' + esc(t.photo) + '" alt="" loading="lazy" onerror="this.remove()">'
+        ? '<img src="' + esc(t.photo) + '" alt="" onerror="this.remove()">'
         : TEMPLE_ICON;
       return '<article class="temple"><div class="temple-img"><span class="idx">' + String(k + 1).padStart(2, "0") + "</span>" + img +
         '</div><div class="temple-body"><div class="w">' + esc(T.templeWord) + "</div><h4>" + esc(city(t.city)) +
@@ -325,7 +325,15 @@
       if (b) setLang(b.dataset.lang);
     });
     $("regSearch").addEventListener("input", filterRegister);
-    $("btnPrint").addEventListener("click", function () { window.print(); });
+    function printWhenImagesReady() {
+      var imgs = Array.prototype.slice.call(document.images);
+      imgs.forEach(function (i) { i.loading = "eager"; });
+      Promise.all(imgs.map(function (i) {
+        if (i.complete) return i.decode ? i.decode().catch(function () {}) : null;
+        return new Promise(function (r) { i.addEventListener("load", r, { once: true }); i.addEventListener("error", r, { once: true }); });
+      })).then(function () { window.print(); });
+    }
+    $("btnPrint").addEventListener("click", printWhenImagesReady);
     window.addEventListener("beforeprint", showFullRegisterForPrint);
     window.addEventListener("afterprint", filterRegister);
     document.addEventListener("click", onPhotoClick);

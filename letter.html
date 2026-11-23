@@ -400,7 +400,15 @@ main{padding:28px 12px 50px}
       el.addEventListener("input", function () { store("nglg.letter." + f, el.value); render(); });
     });
     $("langGroup").addEventListener("click", function (e) { var b = e.target.closest("button[data-lang]"); if (b) setLang(b.dataset.lang); });
-    $("btnPrint").addEventListener("click", function () { window.print(); });
+    function printWhenImagesReady() {
+      var imgs = Array.prototype.slice.call(document.images);
+      imgs.forEach(function (i) { i.loading = "eager"; });
+      Promise.all(imgs.map(function (i) {
+        if (i.complete) return i.decode ? i.decode().catch(function () {}) : null;
+        return new Promise(function (r) { i.addEventListener("load", r, { once: true }); i.addEventListener("error", r, { once: true }); });
+      })).then(function () { window.print(); });
+    }
+    $("btnPrint").addEventListener("click", printWhenImagesReady);
     logo = store("nglg.letter.logo") || null;
     $("logoPick").addEventListener("click", function () { $("logoInput").value = ""; $("logoInput").click(); });
     $("logoInput").addEventListener("change", onLogoFile);
