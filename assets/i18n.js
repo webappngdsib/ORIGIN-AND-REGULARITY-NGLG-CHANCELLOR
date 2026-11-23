@@ -87,6 +87,7 @@ en: {
     ["Today", "102 mutual recognitions worldwide; active participation in the World Conference of Regular Grand Lodges and the European Conferences."]
   ],
   ugleDocCap: "Letter of the Grand Secretary of UGLE, 8 September 1993",
+  ireDocCap: "Letter of the Grand Secretary of the Grand Lodge of Ireland, 3 October 1994",
   scotDocCap: "Letter of the Grand Secretary of the Grand Lodge of Scotland, 5 May 1995",
   ugleDocLink: "View the original letter",
   coexTitle: "Two Regular Grand Lodges, One Nation",
@@ -291,6 +292,7 @@ es: {
     ["Hoy", "102 reconocimientos mutuos en todo el mundo; participación activa en la Conferencia Mundial de Grandes Logias Regulares y en las Conferencias Europeas."]
   ],
   ugleDocCap: "Carta del Gran Secretario de la GLUI, 8 de septiembre de 1993",
+  ireDocCap: "Carta del Gran Secretario de la Gran Logia de Irlanda, 3 de octubre de 1994",
   scotDocCap: "Carta del Gran Secretario de la Gran Logia de Escocia, 5 de mayo de 1995",
   ugleDocLink: "Ver la carta original",
   coexTitle: "Dos Grandes Logias Regulares, una Nación",
@@ -495,6 +497,7 @@ pt: {
     ["Hoje", "102 reconhecimentos mútuos em todo o mundo; participação ativa na Conferência Mundial de Grandes Lojas Regulares e nas Conferências Europeias."]
   ],
   ugleDocCap: "Carta do Grande Secretário da GLUI, 8 de setembro de 1993",
+  ireDocCap: "Carta do Grande Secretário da Grande Loja da Irlanda, 3 de outubro de 1994",
   scotDocCap: "Carta do Grande Secretário da Grande Loja da Escócia, 5 de maio de 1995",
   ugleDocLink: "Ver a carta original",
   coexTitle: "Duas Grandes Lojas Regulares, uma Nação",

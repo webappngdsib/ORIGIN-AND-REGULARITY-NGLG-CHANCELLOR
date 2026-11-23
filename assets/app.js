@@ -20,6 +20,7 @@
   var UGLE_DOC_URL = "https://drive.google.com/file/d/1taK4-_1Lhn_Anq8r-OJTJQvV6BrJjemy/view?usp=sharing";
   var TIMELINE_DOCS = {
     1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL, cap: "ugleDocCap" },
+    5: { src: "assets/documents/ireland-recognition-1994.jpg", url: "assets/documents/ireland-recognition-1994.jpg", cap: "ireDocCap" },
     6: { src: "assets/documents/scotland-recognition-1995.jpg", url: "assets/documents/scotland-recognition-1995.jpg", cap: "scotDocCap" }
   };
   var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
