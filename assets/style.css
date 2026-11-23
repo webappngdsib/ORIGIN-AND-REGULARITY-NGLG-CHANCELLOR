@@ -251,6 +251,13 @@ main{padding:28px 0 40px}
 .register .home{display:inline-block;margin-left:8px;font-family:var(--sans);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--burgundy);padding:1px 6px;border-radius:3px;vertical-align:2px}
 .register .empty td{text-align:center;color:var(--muted);font-style:italic;padding:20px}
 
+.conf{margin-top:36px}
+.conf-text{margin:0 0 18px;text-align:justify}
+.conf-photos{display:grid;grid-template-columns:1fr 2.06fr;gap:16px;align-items:start}
+.conf-photos figure{margin:0}
+.conf-photos img{width:100%;border:1px solid var(--line);box-shadow:0 8px 20px rgba(19,32,63,.14)}
+.conf-photos figcaption{font-style:italic;color:var(--muted);font-size:14px;margin-top:6px;line-height:1.4}
+
 /* ---------- governance / conclusion ---------- */
 .bodies{margin:0;padding:0;list-style:none;columns:2;column-gap:40px;counter-reset:b}
 .bodies li{break-inside:avoid;counter-increment:b;display:grid;grid-template-columns:40px 1fr;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
@@ -341,6 +348,7 @@ main{padding:28px 0 40px}
   .hist-doc-img{max-width:240px;margin:0 auto}
   .facts-cols{grid-template-columns:1fr}
   .medals{grid-template-columns:1fr;gap:28px}
+  .conf-photos{grid-template-columns:1fr}
   .history{padding:18px 16px 4px}
   .rc-row{grid-template-columns:120px 1fr 30px;font-size:13px}
   .timeline .tl-emblem{height:64px;max-width:64px}
@@ -479,6 +487,12 @@ main{padding:28px 0 40px}
   .register{font-size:9.5pt}
   .register td{padding:.9mm 2.5mm}
   .register td.gl{font-size:14pt;line-height:1.18}
+  .conf{margin-top:7mm}
+  .conf-photos figure{break-inside:avoid}
+  .conf-text{font-size:10.5pt;margin-bottom:4mm}
+  .conf-photos{gap:4mm;grid-template-columns:46mm 92mm;justify-content:center}
+  .conf-photos img{box-shadow:none}
+  .conf-photos figcaption{font-size:8.5pt}
   .register td.no,.register td.ct{padding-top:1.8mm}
   .register thead{display:table-header-group}
   .register tr{break-inside:avoid}
