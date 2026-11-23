@@ -13,9 +13,12 @@
     ireland: { src: "assets/emblems/grand-lodge-ireland.png", alt: "Emblem of the Grand Lodge of Ireland" },
     scotland: { src: "assets/emblems/grand-lodge-scotland.png", alt: "Emblem of the Grand Lodge of Scotland" }
   };
-  // Timeline entries (by position): 1993 UGLE, 1994 Ireland, 1995 Scotland
-  var TIMELINE_EMBLEMS = { 1: "ugle", 2: "ireland", 3: "scotland" };
+  // Timeline entries (by position): 8 Sep 1993 UGLE, 3 Oct 1994 Ireland, 4 May 1995 Scotland
+  var TIMELINE_EMBLEMS = { 1: "ugle", 5: "ireland", 6: "scotland" };
   var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
+  // Supporting document for a timeline entry (by position): 1993 UGLE recognition letter
+  var UGLE_DOC_URL = "https://drive.google.com/file/d/1taK4-_1Lhn_Anq8r-OJTJQvV6BrJjemy/view?usp=sharing";
+  var TIMELINE_DOCS = { 1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL } };
   var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
   var STAMPS = ["sheet-figure", "stamp-parthenon", "stamp-figure", "sheet-parthenon"];
   var lang = "en";
@@ -93,7 +96,12 @@
 
     $("timelineList").innerHTML = T.timeline.map(function (x, k) {
       var em = TIMELINE_EMBLEMS[k];
-      var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + esc(x[1]) + "</p>";
+      var doc = TIMELINE_DOCS[k];
+      var text = doc ? '<a class="tl-link" href="' + doc.url + '" target="_blank" rel="noopener">' + esc(x[1]) + "</a>" : esc(x[1]);
+      var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + text + "</p>";
+      if (doc) body += '<a class="tl-doc" href="' + doc.url + '" target="_blank" rel="noopener"><img src="' + doc.src +
+        '" alt="' + esc(T.ugleDocCap) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T.ugleDocCap) +
+        '</em><span class="tl-doc-go">' + esc(T.ugleDocLink) + " ↗</span></span></a>";
       if (!em) return "<li>" + body + "</li>";
       return '<li class="has-emblem"><div class="tl-text">' + body + '</div><img class="tl-emblem" src="' + EMBLEMS[em].src +
         '" alt="' + esc(EMBLEMS[em].alt) + '" loading="lazy"></li>';
