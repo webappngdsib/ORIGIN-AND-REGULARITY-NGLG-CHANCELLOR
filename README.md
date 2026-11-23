@@ -43,7 +43,7 @@ Open the page directly in a chosen language:
 |---|---|---|
 | — | **Cover** | Coat of arms, title, key figures (83 Lodges · 1,800+ Brethren · 102 Recognitions · 20 Masonic Temples), issued by the Grand Secretary |
 | — | **Contents** | Table of contents in the selected language |
-| I | **Executive Summary** | The case for regular recognition |
+| I | **Executive Summary** | The case for regular recognition, and **Key Facts**: regularity and recognition (UGLE *Policy and Practice* 1950–2000, p. 33), international standing (63 Grand Lodges in amity with UGLE, 47 CMI members, XX World Conference), and the NGLG today |
 | II | **The Eight Basic Principles** | The basic principles for Grand Lodge recognition (as in the UGLE Book of Constitutions), plus membership, conduct and sovereignty |
 | III | **A Regular Origin — 7 June 1986** | Origin: 7 February 1867 (the first Grand Orient in Greece) and 7 June 1986 (inauguration of the NGLG); The foundation by six regularly constituted Lodges, the 1993 recognition by UGLE, the Constitution, and the six founding Lodges |
 | IV | **Chain of Recognition** | Detailed timeline from 1986 to today: UGLE (8 Sep 1993, with the original recognition letter), Spain, Italy, France, Ireland, Scotland, South Africa and Ecuador (1993–1995), with the emblems of the three Home Grand Lodges, coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |

@@ -85,6 +85,14 @@
     $("coverStats").innerHTML = pairs(T.coverStats, "div");
     $("sumStats").innerHTML = pairs(T.sumStats, "div");
 
+    function factItems(arr) {
+      return arr.map(function (f) {
+        return "<li>" + esc(f).replace(/www\.emste-charity\.org/, '<a href="https://emste-charity.org/" target="_blank" rel="noopener">www.emste-charity.org</a>') + "</li>";
+      }).join("");
+    }
+    $("factsList1").innerHTML = factItems(T.facts1);
+    $("factsList2").innerHTML = factItems(T.facts2);
+
     $("principlesList").innerHTML = T.principles.map(function (p, k) {
       return '<li><span class="num">' + (k + 1) + "</span><div><h4>" + esc(p[0]) + "</h4><p>" + esc(p[1]) + "</p></div></li>";
     }).join("");
