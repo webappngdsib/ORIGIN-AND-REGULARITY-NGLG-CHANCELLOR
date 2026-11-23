@@ -80,7 +80,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 ## ✉️ Petition letter for mutual recognition
 
-The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary. It petitions a Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**. Open it with the **Petition letter PDF** button in the top bar of the dossier.
+The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary, **addressed to the Grand Secretary of the other Grand Lodge**. It petitions that Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**, and asks the Grand Secretary to convey the greetings of our Grand Master to his Grand Master and to place the petition before him. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
 - **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).

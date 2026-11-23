@@ -204,8 +204,8 @@ main{padding:28px 12px 50px}
   </div>
   <div class="fields">
     <label><span data-t="fGL"></span><input id="inGL" autocomplete="off"></label>
-    <label><span data-t="fGM"></span><input id="inGM" autocomplete="off"></label>
     <label><span data-t="fGS"></span><input id="inGS" autocomplete="off"></label>
+    <label><span data-t="fGM"></span><input id="inGM" autocomplete="off"></label>
     <label><span data-t="fPlace"></span><input id="inPlace" autocomplete="off"></label>
     <label><span data-t="fRef"></span><input id="inRef" autocomplete="off"></label>
     <div class="logo-field"><span data-t="fLogo"></span>
@@ -339,10 +339,11 @@ main{padding:28px 12px 50px}
     $("vRef").textContent = val("Ref") || ("NGLG/GS/" + new Date().getFullYear() + "/………");
     $("vDate").textContent = (lang === "en" ? "Athens, " : "Atenas, ") +
       new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
-    $("vGM").innerHTML = val("GM") ? esc(val("GM")) : BLANK;
+    $("vGM").innerHTML = val("GS") ? esc(val("GS")) : BLANK;
+    var gmRef = val("GM") ? T.yourGMn.split("{n}").join("<strong>" + esc(val("GM")) + "</strong>") : T.yourGM;
     $("vGL").innerHTML = glHtml();
     $("vPlace").innerHTML = val("Place") ? esc(val("Place")) : BLANK;
-    $("vBody").innerHTML = T.body.map(function (p) { return "<p>" + p.split("{GL}").join(glHtml()) + "</p>"; }).join("");
+    $("vBody").innerHTML = T.body.map(function (p) { return "<p>" + p.split("{GL}").join(glHtml()).split("{GM}").join(gmRef) + "</p>"; }).join("");
     $("vEncl").innerHTML = T.encl.map(function (e) { return "<li>" + esc(e) + "</li>"; }).join("");
     $("vAnnexIntro").innerHTML = T.annexIntro.split("{GL}").join(glHtml());
     $("vArticles").innerHTML = T.articles.map(function (a) { return "<li><div><h4>" + esc(a[0]) + "</h4><p>" + esc(a[1]) + "</p></div></li>"; }).join("");
