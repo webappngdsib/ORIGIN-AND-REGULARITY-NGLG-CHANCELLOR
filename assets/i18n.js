@@ -54,6 +54,11 @@ en: {
   histTitle: "Origin",
   hist1Date: "February 7 , 1867",
   hist1Text: "About the foundation of the National Grand Lodge of Greece on the 7 th of February 1867, the First Grand Orient was formed in Greece. That Grand Orient was presenting itself in the english-speaking world as a “Grand Lodge”. Its first Officers were elected in June, 1867, but the position of the Grand Master remained  vacant until July 1872. At that date, its first Constitutions were published and Dimitrios Rhodocanakis was elected its first Grand Master. The Council is elected by the representatives of its members-Lodges. The Grand Orient changed its name into “Grand Orient – Grand Lodge” in 1936 and after the second world war all its documents show the single appellation “Grand Lodge”.",
+  histDocDate: "1872 – 1875",
+  histDocTitle: "The founding document of the Grand Lodge of Greece",
+  histDocText: "This historic page records the Grand Lodge of Freemasons of Greece in its first years. It names H.I.H. the Prince Rhodocanakis as its first Grand Master and lists the Grand Officers for 1872–75, among them professors of the University of Athens, a Minister of Justice and senior judges. It also lists the eight Lodges then on its roll — in Syros, Athens, Piraeus, Chalkis, Corfu, Patras, Lamia and Argos — founded between 1860 and 1867. It was from this Grand Lodge that, more than a century later, six regular Lodges withdrew to consecrate the National Grand Lodge of Greece in 1986.",
+  histDocCap: "The Grand Lodge of Freemasons of Greece — Office-bearers for the years 1872–75 and list of Lodges on its roll",
+  histDocOpen: "View the document",
   hist2Date: "June 7, 1986",
   hist2Text: "Inauguration of the National Grand Lodge of Greece, was formed by six (6) Lodges (approx. 250 members) previously under the Jurisdiction of the Grand Lodge of Greece. On the 7 th of June 1986, six Lodges of the Grand Lodge of Greece decided to denounce that Grand Lodge due to continued irregularities, illegal disciplinary procedures and infringement to higher degree bodies. Those Lodges were “Palaion Patron Germanos”, “Acropolis”, “Parthenon”, “Omonoia”, “Miaoulis” and “Pistis”. The representatives of these six Lodges, all present, appointed by the latter, after declaring unanimously the definite exit from the aforementioned federation, founded the National Grand Lodge of Greece, voted its first Constitution, and elected its first Council and Grand Master, Stephanos Paipetis. The inauguration ceremony was led by the late R.W. Bro. William R. J. Eve, Past Grand Deacon of the UGLE and first Deputy Grand Master of the National Grand Lodge of Greece in the city of Athens.",
   origEyebrow: "Foundation · Principle 1",
@@ -173,6 +178,10 @@ en: {
     "Widows Sons"
   ],
 
+  medalTitle: "The Ambassador's Medal",
+  medalCap: "The Medal of the Ambassador of the National Grand Lodge of Greece",
+  medalDesc: "Bearing the coat of arms of the NGLG upon the globe, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+
   conEyebrow: "Conclusion",
   conTitle: "Four Pillars of Regularity",
   conLead: "The regularity of origin of the National Grand Lodge of Greece rests upon four clear and cumulative foundations.",
@@ -259,6 +268,11 @@ es: {
   histTitle: "Origen",
   hist1Date: "7 de febrero de 1867",
   hist1Text: "En cuanto a la fundación de la Gran Logia Nacional de Grecia: el 7 de febrero de 1867 se constituyó en Grecia el primer Gran Oriente. Dicho Gran Oriente se presentaba en el mundo anglófono como una «Gran Logia». Sus primeros Oficiales fueron elegidos en junio de 1867, pero el cargo de Gran Maestro permaneció vacante hasta julio de 1872. En esa fecha se publicaron sus primeras Constituciones y Dimitrios Rhodocanakis fue elegido su primer Gran Maestro. El Consejo es elegido por los representantes de sus Logias miembros. El Gran Oriente cambió su nombre por el de «Gran Oriente – Gran Logia» en 1936 y, después de la Segunda Guerra Mundial, todos sus documentos muestran la única denominación de «Gran Logia».",
+  histDocDate: "1872 – 1875",
+  histDocTitle: "El documento fundacional de la Gran Logia de Grecia",
+  histDocText: "Esta página histórica recoge a la Gran Logia de Francmasones de Grecia en sus primeros años. Nombra a S.A.I. el Príncipe Rhodocanakis como su primer Gran Maestro y enumera a los Grandes Oficiales de 1872–75, entre ellos profesores de la Universidad de Atenas, un Ministro de Justicia y altos magistrados. Enumera también las ocho Logias entonces inscritas — en Siros, Atenas, El Pireo, Calcis, Corfú, Patras, Lamía y Argos —, fundadas entre 1860 y 1867. De esta Gran Logia se separaron, más de un siglo después, las seis Logias regulares que consagraron la Gran Logia Nacional de Grecia en 1986.",
+  histDocCap: "La Gran Logia de Francmasones de Grecia — Oficiales para los años 1872–75 y lista de Logias inscritas",
+  histDocOpen: "Ver el documento",
   hist2Date: "7 de junio de 1986",
   hist2Text: "Inauguración de la Gran Logia Nacional de Grecia, constituida por seis (6) Logias (aprox. 250 miembros) que se encontraban anteriormente bajo la jurisdicción de la Gran Logia de Grecia. El 7 de junio de 1986, seis Logias de la Gran Logia de Grecia decidieron denunciar a dicha Gran Logia debido a irregularidades continuadas, procedimientos disciplinarios ilegales e injerencias de los cuerpos de grados superiores. Esas Logias fueron «Palaion Patron Germanos», «Acropolis», «Parthenon», «Omonoia», «Miaoulis» y «Pistis». Los representantes de estas seis Logias, todos presentes y designados por ellas, tras declarar por unanimidad la salida definitiva de la mencionada federación, fundaron la Gran Logia Nacional de Grecia, votaron su primera Constitución y eligieron su primer Consejo y Gran Maestro, Stephanos Paipetis. La ceremonia de inauguración fue presidida por el finado R.H. William R. J. Eve, Past Gran Diácono de la GLUI y primer Gran Maestro Adjunto de la Gran Logia Nacional de Grecia, en la ciudad de Atenas.",
   origEyebrow: "Fundación · Principio 1",
@@ -378,6 +392,10 @@ es: {
     "Widows Sons (Hijos de la Viuda)"
   ],
 
+  medalTitle: "La Medalla del Embajador",
+  medalCap: "Medalla del Embajador de la Gran Logia Nacional de Grecia",
+  medalDesc: "Con el escudo de armas de la GLNG sobre el globo terrestre, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+
   conEyebrow: "Conclusión",
   conTitle: "Cuatro Pilares de la Regularidad",
   conLead: "La regularidad de origen de la Gran Logia Nacional de Grecia descansa sobre cuatro fundamentos claros y acumulativos.",
@@ -464,6 +482,11 @@ pt: {
   histTitle: "Origem",
   hist1Date: "7 de fevereiro de 1867",
   hist1Text: "Quanto à fundação da Grande Loja Nacional da Grécia: em 7 de fevereiro de 1867 foi constituído na Grécia o primeiro Grande Oriente. Esse Grande Oriente apresentava-se no mundo de língua inglesa como uma «Grande Loja». Os seus primeiros Oficiais foram eleitos em junho de 1867, mas o cargo de Grão-Mestre permaneceu vago até julho de 1872. Nessa data foram publicadas as suas primeiras Constituições e Dimitrios Rhodocanakis foi eleito o seu primeiro Grão-Mestre. O Conselho é eleito pelos representantes das suas Lojas membros. O Grande Oriente mudou o seu nome para «Grande Oriente – Grande Loja» em 1936 e, após a Segunda Guerra Mundial, todos os seus documentos apresentam a denominação única de «Grande Loja».",
+  histDocDate: "1872 – 1875",
+  histDocTitle: "O documento fundador da Grande Loja da Grécia",
+  histDocText: "Esta página histórica regista a Grande Loja dos Maçons da Grécia nos seus primeiros anos. Nomeia S.A.I. o Príncipe Rhodocanakis como o seu primeiro Grão-Mestre e enumera os Grandes Oficiais de 1872–75, entre eles professores da Universidade de Atenas, um Ministro da Justiça e altos magistrados. Enumera também as oito Lojas então inscritas — em Siros, Atenas, Pireu, Cálcis, Corfu, Patras, Lâmia e Argos —, fundadas entre 1860 e 1867. Foi desta Grande Loja que, mais de um século depois, se retiraram as seis Lojas regulares que consagraram a Grande Loja Nacional da Grécia em 1986.",
+  histDocCap: "A Grande Loja dos Maçons da Grécia — Oficiais para os anos 1872–75 e lista das Lojas inscritas",
+  histDocOpen: "Ver o documento",
   hist2Date: "7 de junho de 1986",
   hist2Text: "Inauguração da Grande Loja Nacional da Grécia, constituída por seis (6) Lojas (aprox. 250 membros) anteriormente sob a jurisdição da Grande Loja da Grécia. Em 7 de junho de 1986, seis Lojas da Grande Loja da Grécia decidiram denunciar essa Grande Loja devido a irregularidades continuadas, procedimentos disciplinares ilegais e interferência dos corpos de graus superiores. Essas Lojas eram «Palaion Patron Germanos», «Acropolis», «Parthenon», «Omonoia», «Miaoulis» e «Pistis». Os representantes destas seis Lojas, todos presentes e por elas designados, após declararem por unanimidade a saída definitiva da referida federação, fundaram a Grande Loja Nacional da Grécia, votaram a sua primeira Constituição e elegeram o seu primeiro Conselho e Grão-Mestre, Stephanos Paipetis. A cerimônia de inauguração foi conduzida pelo saudoso R.Ir. William R. J. Eve, Past Grande Diácono da GLUI e primeiro Grão-Mestre Adjunto da Grande Loja Nacional da Grécia, na cidade de Atenas.",
   origEyebrow: "Fundação · Princípio 1",
@@ -582,6 +605,10 @@ pt: {
     "Grande Conselho dos Cavaleiros Maçons da Grécia",
     "Widows Sons (Filhos da Viúva)"
   ],
+
+  medalTitle: "A Medalha do Embaixador",
+  medalCap: "Medalha do Embaixador da Grande Loja Nacional da Grécia",
+  medalDesc: "Com o brasão da GLNG sobre o globo terrestre, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusão",
   conTitle: "Quatro Pilares da Regularidade",
