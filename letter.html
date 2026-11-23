@@ -145,6 +145,19 @@ main{padding:28px 12px 50px}
   .lang span,.btn span{display:none}
 }
 
+/* access gate */
+body.gated .toolbar,body.gated main,body.gated .site-foot{display:none}
+.gate{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(800px 400px at 50% 0%,rgba(230,209,153,.14),transparent 60%),linear-gradient(180deg,#13203F,#0C1530)}
+body:not(.gated) .gate{display:none}
+.gate-box{width:100%;max-width:360px;text-align:center;color:#fff;border:1px solid rgba(201,164,74,.5);border-radius:10px;padding:28px 26px;background:rgba(12,21,48,.85)}
+.gate-box img{width:90px;margin:0 auto 14px;border-radius:8px;border:1px solid var(--gold-2)}
+.gate-box h1{font-family:var(--display);color:var(--gold-2);font-size:19px;margin:0 0 6px;letter-spacing:.04em}
+.gate-box p{margin:0 0 16px;color:#C9CEE0;font-size:15px}
+.gate-box input{width:100%;font:22px var(--sans);letter-spacing:.4em;text-align:center;padding:10px;border-radius:6px;border:1px solid rgba(201,164,74,.6);background:#0E1832;color:#fff}
+.gate-box button{margin-top:12px;width:100%;background:var(--gold-2);color:var(--navy);border:0;border-radius:6px;padding:11px;font:700 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.gate-err{color:#F3A6A6!important;margin:10px 0 0!important;font-size:14px!important}
+.gate-back{display:inline-block;margin-top:16px;color:#AEB6D0;font:600 12px var(--sans);text-decoration:none}
+
 /* print: A4 */
 @page{size:A4 portrait;margin:14mm 17mm 18mm}
 @media print{
@@ -190,7 +203,18 @@ main{padding:28px 12px 50px}
 </style>
 <style id="runStyle"></style>
 </head>
-<body>
+<body class="gated">
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <form class="gate-box" id="gateForm" autocomplete="off">
+    <img src="assets/nglg-crest.jpg" alt="">
+    <h1 id="gateTitle">National Grand Lodge of Greece</h1>
+    <p id="gateText">Office of the Grand Secretary — enter the access code.</p>
+    <input id="gateCode" type="password" inputmode="numeric" autocomplete="off" aria-label="Access code" required>
+    <button type="submit" id="gateBtn">Enter</button>
+    <p class="gate-err" id="gateErr" hidden></p>
+    <a class="gate-back" href="index.html">← Dossier</a>
+  </form>
+</div>
 
 <header class="toolbar">
   <div class="tb-row">
@@ -314,6 +338,7 @@ main{padding:28px 12px 50px}
 
 <footer class="site-foot"><span data-t="runFooter"></span></footer>
 
+<script src="assets/gate.js"></script>
 <script src="assets/letter-i18n.js"></script>
 <script>
 (function () {
@@ -385,11 +410,16 @@ main{padding:28px 12px 50px}
     r.readAsDataURL(f);
   }
 
+  function gateTexts() {
+    $("gateTitle").textContent = T.orgName; $("gateText").textContent = T.gateText;
+    $("gateBtn").textContent = T.gateBtn; $("gateCode").setAttribute("aria-label", T.gateBtn);
+  }
   function setLang(l) {
     lang = l; T = L[l]; store("nglg.lang", l);
     var b = document.querySelectorAll("#langGroup button");
     for (var i = 0; i < b.length; i++) b[i].setAttribute("aria-pressed", b[i].dataset.lang === l ? "true" : "false");
     render();
+    gateTexts();
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -413,6 +443,15 @@ main{padding:28px 12px 50px}
     $("logoPick").addEventListener("click", function () { $("logoInput").value = ""; $("logoInput").click(); });
     $("logoInput").addEventListener("change", onLogoFile);
     $("logoClear").addEventListener("click", function () { setLogo(null); });
+    function openGate() { document.body.classList.remove("gated"); }
+    if (window.NGLG_GATE.isUnlocked()) openGate();
+    $("gateForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      window.NGLG_GATE.tryCode($("gateCode").value).then(function (ok) {
+        if (ok) { openGate(); $("gateErr").hidden = true; }
+        else { $("gateErr").textContent = T.codeWrong; $("gateErr").hidden = false; $("gateCode").select(); }
+      });
+    });
     var ql = q.get("lang"), sl = store("nglg.lang");
     setLang(LANGS.indexOf(ql) > -1 ? ql : LANGS.indexOf(sl) > -1 ? sl : "en");
   });

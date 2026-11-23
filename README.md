@@ -80,7 +80,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 ## ✉️ Petition letter for mutual recognition
 
-The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary, **addressed to the Grand Secretary of the other Grand Lodge**. It petitions that Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**, and asks the Grand Secretary to convey the greetings of our Grand Master to his Grand Master and to place the petition before him. Open it with the **Petition letter PDF** button in the top bar of the dossier.
+The page [`letter.html`](letter.html) is reserved for the Grand Secretariat and opens only with its access code. It holds a formal Masonic letter from the Grand Secretary, **addressed to the Grand Secretary of the other Grand Lodge**. It petitions that Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**, and asks the Grand Secretary to convey the greetings of our Grand Master to his Grand Master and to place the petition before him. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
 - **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
@@ -118,6 +118,12 @@ For the best result, use Google Chrome or Microsoft Edge.
 
 ---
 
+## 🌍 Amity Planet (website only)
+
+Chapter VIII embeds the interactive globe [nglg-amity-planet.pages.dev](https://nglg-amity-planet.pages.dev) at half the screen height, to show the mutual recognitions around the world. It is shown on the website only and is left out of the PDF.
+
+---
+
 ## 🖼️ Adding the photographs
 
 The page has three photo slots:
@@ -130,7 +136,7 @@ The page has three photo slots:
 
 There are two ways to add them:
 - **For everyone:** upload the files to the `assets/photos/` folder on GitHub (*Add file → Upload files*), using exactly these names. They then appear on the live page and in every exported PDF.
-- **On one computer only:** click **Add photograph** on the page. The photo is stored only in that browser.
+- **On one computer only:** unlock editing with the padlock button in the top bar (Grand Secretariat access code), then click **Add photograph**. The photo is stored only in that browser. Visitors do not see these buttons.
 
 **Temple photographs:** the gallery in chapter VII shows the photos listed in `NGLG_TEMPLE_GALLERY` in `assets/data-nglg.js` (files in `assets/photos/temples/`). To show a photo on a specific temple card, enter its path in that temple's `photo` field, for example `photo: "assets/photos/temples/temple-1.jpg"`.
 

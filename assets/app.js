@@ -148,6 +148,7 @@
     $("sigDate").textContent = new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
     $("regSearch").placeholder = T.regSearch;
     $("btnLetter").href = "letter.html?lang=" + lang;
+    $("btnLock").title = window.NGLG_GATE && window.NGLG_GATE.isUnlocked() ? T.lockOff : T.lockOn;
 
     renderPhotos();
     setRunningFooter();
@@ -334,6 +335,22 @@
       })).then(function () { window.print(); });
     }
     $("btnPrint").addEventListener("click", printWhenImagesReady);
+    var GATE = window.NGLG_GATE;
+    function applyLock() {
+      document.body.classList.toggle("unlocked", GATE.isUnlocked());
+      $("btnLock").title = GATE.isUnlocked() ? T.lockOff : T.lockOn;
+    }
+    applyLock();
+    $("btnLock").addEventListener("click", function () {
+      if (GATE.isUnlocked()) { GATE.lock(); applyLock(); return; }
+      GATE.ask(T.codePrompt, T.codeWrong).then(applyLock);
+    });
+    $("btnLetter").addEventListener("click", function (e) {
+      if (GATE.isUnlocked()) return;
+      e.preventDefault();
+      var href = this.href;
+      GATE.ask(T.codePrompt, T.codeWrong).then(function (ok) { applyLock(); if (ok) location.href = href; });
+    });
     window.addEventListener("beforeprint", showFullRegisterForPrint);
     window.addEventListener("afterprint", filterRegister);
     document.addEventListener("click", onPhotoClick);

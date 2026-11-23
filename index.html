@@ -26,6 +26,7 @@
         <button type="button" data-lang="es" title="Español"><svg viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg><span>ES</span></button>
         <button type="button" data-lang="pt" title="Português (Brasil)"><svg viewBox="0 0 720 504" aria-hidden="true"><rect width="720" height="504" fill="#009c3b"/><path d="M360 42 678 252 360 462 42 252z" fill="#ffdf00"/><circle cx="360" cy="252" r="110" fill="#002776"/><path d="M252 230c70-14 160-4 218 36l-6 14c-56-38-142-48-210-34z" fill="#fff"/></svg><span>BR</span></button>
       </div>
+      <button type="button" class="btn-lock" id="btnLock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
       <a class="btn-print btn-letter" id="btnLetter" href="letter.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="petitionBtn"></span></a>
       <button type="button" class="btn-print" id="btnPrint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="exportPdf"></span></button>
     </div>
@@ -203,6 +204,14 @@
   <div class="wrap">
     <header class="ch-head"><span class="ch-num"></span><p class="eyebrow" data-t="regEyebrow"></p><h2 data-t="regTitle"></h2><p class="ch-lead" data-t="regLead"></p></header>
     <div class="region-chart" id="regionChart" aria-label="Recognitions by region"></div>
+    <div class="amity no-print">
+      <div class="amity-head">
+        <h3 class="sub-head" data-t="amityTitle"></h3>
+        <a class="amity-open" href="https://nglg-amity-planet.pages.dev" target="_blank" rel="noopener"><span data-t="amityOpen"></span> ↗</a>
+      </div>
+      <p class="amity-lead" data-t="amityLead"></p>
+      <iframe class="amity-frame" src="https://nglg-amity-planet.pages.dev" title="NGLG Amity Planet — mutual recognitions around the world" loading="eager" allow="fullscreen" referrerpolicy="no-referrer"></iframe>
+    </div>
     <div class="reg-tools no-print">
       <input type="search" id="regSearch" autocomplete="off">
       <span class="reg-count" id="regCount"></span>
@@ -313,6 +322,7 @@
 <script src="assets/data-recognitions.js"></script>
 <script src="assets/data-nglg.js"></script>
 <script src="assets/i18n.js"></script>
+<script src="assets/gate.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
