@@ -86,9 +86,9 @@ The page [`letter.html`](letter.html) holds a formal Masonic letter from the Gra
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
 - **Content:**
   - letterhead of the NGLG
-  - the letter, signed by **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, by command of the Most Worshipful Grand Master
+  - the letter, bearing the signatures of **MW Bro. Ioannis Benetatos, Grand Master** and **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, with the seal of the National Grand Lodge of Greece
   - list of enclosures
-  - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles and signature blocks for both Grand Lodges
+  - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles; the NGLG side is already signed and sealed, the other side is left for the recipient Grand Lodge
 - **Export:** click **Export letter PDF** to get an A4 PDF of 3 pages.
 - **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
 
