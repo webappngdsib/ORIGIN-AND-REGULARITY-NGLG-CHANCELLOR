@@ -248,6 +248,11 @@ main{padding:28px 0 40px}
 .bodies{margin:0;padding:0;list-style:none;columns:2;column-gap:40px;counter-reset:b}
 .bodies li{break-inside:avoid;counter-increment:b;display:grid;grid-template-columns:40px 1fr;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
 .bodies li::before{content:counter(b,upper-roman);font-family:var(--display);color:var(--burgundy);font-weight:700;font-size:14px;padding-top:1px}
+.medal{margin:0 auto;max-width:360px;text-align:center}
+.medal img{width:100%;background:#fff;border:1px solid var(--line);padding:14px;box-shadow:0 10px 26px rgba(19,32,63,.14)}
+.medal figcaption{margin-top:12px;display:flex;flex-direction:column;gap:4px}
+.medal strong{font-family:var(--display);color:var(--navy);font-size:16px;font-weight:600}
+.medal span{font-style:italic;color:var(--muted);font-size:15px}
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--gold-2);background:#fff}
 .pillar{padding:30px 18px 26px;text-align:center;border-right:1px solid var(--line);position:relative}
 .pillar:last-child{border-right:0}
@@ -369,6 +374,12 @@ main{padding:28px 0 40px}
   .origin-grid{grid-template-columns:.8fr 1.4fr;gap:8mm}
   .history{margin-bottom:7mm;padding:5mm 6mm 1mm}
   .facts{margin-top:3mm}
+  .medal{max-width:130mm;display:grid;grid-template-columns:40mm 1fr;gap:7mm;align-items:center;text-align:left;break-inside:avoid}
+  .medal figcaption{margin-top:0}
+  #governance .sub-head.center{margin:5mm 0 3mm}
+  .medal img{padding:2mm;box-shadow:none}
+  .medal strong{font-size:10.5pt}
+  .medal span{font-size:9.5pt}
   #summary .sub-head{margin:3mm 0 2.5mm}
   #summary .stat-grid div{padding:3mm 3.5mm}
   #summary .stat-grid{gap:2.5mm}

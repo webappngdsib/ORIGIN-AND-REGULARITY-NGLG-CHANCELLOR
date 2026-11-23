@@ -173,6 +173,10 @@ en: {
     "Widows Sons"
   ],
 
+  medalTitle: "The Ambassador's Medal",
+  medalCap: "The Medal of the Ambassador of the National Grand Lodge of Greece",
+  medalDesc: "Bearing the coat of arms of the NGLG upon the globe, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+
   conEyebrow: "Conclusion",
   conTitle: "Four Pillars of Regularity",
   conLead: "The regularity of origin of the National Grand Lodge of Greece rests upon four clear and cumulative foundations.",
@@ -378,6 +382,10 @@ es: {
     "Widows Sons (Hijos de la Viuda)"
   ],
 
+  medalTitle: "La Medalla del Embajador",
+  medalCap: "Medalla del Embajador de la Gran Logia Nacional de Grecia",
+  medalDesc: "Con el escudo de armas de la GLNG sobre el globo terrestre, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+
   conEyebrow: "Conclusión",
   conTitle: "Cuatro Pilares de la Regularidad",
   conLead: "La regularidad de origen de la Gran Logia Nacional de Grecia descansa sobre cuatro fundamentos claros y acumulativos.",
@@ -582,6 +590,10 @@ pt: {
     "Grande Conselho dos Cavaleiros Maçons da Grécia",
     "Widows Sons (Filhos da Viúva)"
   ],
+
+  medalTitle: "A Medalha do Embaixador",
+  medalCap: "Medalha do Embaixador da Grande Loja Nacional da Grécia",
+  medalDesc: "Com o brasão da GLNG sobre o globo terrestre, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusão",
   conTitle: "Quatro Pilares da Regularidade",
