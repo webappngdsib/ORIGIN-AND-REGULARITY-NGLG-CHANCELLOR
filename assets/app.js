@@ -13,8 +13,8 @@
     ireland: { src: "assets/emblems/grand-lodge-ireland.png", alt: "Emblem of the Grand Lodge of Ireland" },
     scotland: { src: "assets/emblems/grand-lodge-scotland.png", alt: "Emblem of the Grand Lodge of Scotland" }
   };
-  // Timeline entries (by position): 1993 UGLE, 1994 Ireland, 1995 Scotland
-  var TIMELINE_EMBLEMS = { 1: "ugle", 2: "ireland", 3: "scotland" };
+  // Timeline entries (by position): 8 Sep 1993 UGLE, 1 Oct 1994 Ireland, 4 May 1995 Scotland
+  var TIMELINE_EMBLEMS = { 1: "ugle", 5: "ireland", 6: "scotland" };
   var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
   // Supporting document for a timeline entry (by position): 1993 UGLE recognition letter
   var UGLE_DOC_URL = "https://drive.google.com/file/d/1taK4-_1Lhn_Anq8r-OJTJQvV6BrJjemy/view?usp=sharing";
