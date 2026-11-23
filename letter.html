@@ -33,7 +33,12 @@ img{display:block;max-width:100%}
 .btn{margin-left:auto;display:flex;align-items:center;gap:7px;background:var(--gold-2);color:var(--navy);border:0;border-radius:6px;padding:9px 15px;font:700 12px var(--sans);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
 .btn:hover{background:var(--gold-lt)}
 .btn svg{width:16px;height:16px}
-.fields{max-width:1100px;margin:0 auto;padding:0 18px 12px;display:grid;grid-template-columns:2fr 1.4fr 1.2fr 1fr;gap:8px 12px}
+.fields{max-width:1240px;margin:0 auto;padding:0 18px 12px;display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1.3fr) minmax(0,1.3fr) minmax(0,1.1fr) minmax(0,1fr) auto;gap:8px 12px}
+.logo-field{display:flex;flex-direction:column;gap:3px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold-lt)}
+.logo-ctl{display:flex;align-items:center;gap:6px;height:36px}
+.logo-prev{width:34px;height:34px;border-radius:5px;border:1px dashed rgba(201,164,74,.6);background:#fff center/contain no-repeat}
+.logo-ctl button{font:700 11px var(--sans);letter-spacing:.04em;text-transform:none;border:0;border-radius:5px;padding:9px 10px;cursor:pointer;background:var(--gold-2);color:var(--navy);white-space:nowrap}
+.logo-ctl button.alt{background:transparent;color:#C9CEE0;border:1px solid rgba(201,164,74,.5)}
 .fields label{display:flex;flex-direction:column;gap:3px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold-lt)}
 .fields input{font:15px var(--serif);padding:7px 10px;border-radius:5px;border:1px solid rgba(201,164,74,.5);background:#0E1832;color:#fff}
 .fields input::placeholder{color:#7F89A8}
@@ -60,6 +65,9 @@ main{padding:28px 12px 50px}
 .meta{display:flex;justify-content:space-between;gap:10mm;margin-top:9mm;font-size:15px}
 .meta .ref{color:var(--muted)}
 .recipient{margin-top:6mm;font-size:16px;line-height:1.45}
+.recipient{display:flex;justify-content:space-between;align-items:center;gap:8mm}
+.rcp-logo{width:30mm;height:30mm;flex:none;background:center/contain no-repeat}
+.rcp-logo[hidden]{display:none}
 .recipient .to{font-style:italic;color:var(--muted)}
 .recipient .gm{font-weight:600}
 .recipient .gl{font-family:var(--display);color:var(--navy);font-size:17px;font-weight:600}
@@ -77,6 +85,14 @@ main{padding:28px 12px 50px}
 .sign-role{font-family:var(--sans);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:1mm}
 .sign-cmd{font-style:italic;color:var(--muted);font-size:13.5px;margin-top:1mm}
 .seal{width:30mm;height:30mm;border-radius:50%;border:1.5px dashed rgba(176,138,46,.7);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;flex:none}
+.sign2{display:grid;grid-template-columns:1fr 34mm 1fr;align-items:start;gap:6mm;margin-top:8mm}
+.sign2 .sign-block{min-width:0;text-align:center}
+.sig-img{display:block;height:17mm;width:auto;max-width:100%;margin:0 auto -2mm;position:relative;z-index:1}
+.seal-img{width:33mm;height:auto;justify-self:center;align-self:center;filter:drop-shadow(0 2px 3px rgba(19,32,63,.25))}
+.sig-sm{height:13mm;margin-top:4mm;margin-bottom:-3mm}
+.sl-signed{margin-top:0}
+.sig-space{width:1px}
+.seal-sm{width:21mm;height:auto;display:block;margin:4mm auto 0}
 .encl{margin-top:9mm;font-size:13.5px;color:var(--muted);break-inside:avoid}
 .encl b{font-family:var(--sans);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--burgundy)}
 .encl ol{margin:1.5mm 0 0;padding-left:5mm}
@@ -94,6 +110,11 @@ main{padding:28px 12px 50px}
 .articles p{margin:1mm 0 0;font-size:15px;line-height:1.5;text-align:justify}
 .annex-close{margin:5mm 0 0;font-style:italic;color:var(--muted);text-align:center;font-size:14.5px}
 .parties{display:grid;grid-template-columns:1fr 1fr;gap:10mm;margin-top:8mm;break-inside:avoid}
+.party-head{display:flex;align-items:center;justify-content:center;gap:3mm;margin-bottom:6mm}
+.party-head h5{margin:0!important;min-height:0!important;text-align:left}
+.party-logo{width:14mm;height:14mm;flex:none;object-fit:contain;border-radius:3px}
+.party-logo-x{display:inline-block;background:center/contain no-repeat;border:1px dashed rgba(176,138,46,.6)}
+.party-logo-x.has{border:0}
 .party h5{margin:0 0 6mm;font-family:var(--display);color:var(--navy);font-size:13.5px;text-align:center;letter-spacing:.03em;min-height:2.6em}
 .sl{margin-top:13mm;border-top:1px solid var(--ink);padding-top:1.5mm;text-align:center}
 .sl .r{font-family:var(--sans);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
@@ -105,6 +126,8 @@ main{padding:28px 12px 50px}
 
 @media screen and (max-width:860px){
   .fields{grid-template-columns:1fr 1fr}
+  .recipient{align-items:flex-start}
+  .rcp-logo{width:22mm;height:22mm}
   .sheet{width:auto;min-height:0;padding:12mm 8mm 14mm}
   .sheet::before,.sheet::after{display:none}
   .head{grid-template-columns:20mm 1fr;}
@@ -114,6 +137,7 @@ main{padding:28px 12px 50px}
   .parties{grid-template-columns:1fr}
   .meta{flex-direction:column;gap:2mm}
   .sign{flex-direction:column;align-items:flex-start}
+  .sign2{grid-template-columns:1fr;justify-items:center}
   .blank{min-width:40mm}
   .lang span,.btn span{display:none}
 }
@@ -134,7 +158,7 @@ main{padding:28px 12px 50px}
   #annex .head img{width:18mm}
   #annex .org{font-size:17px}
   #annex .head-r b{font-size:15px}
-  .annex-head{margin:3mm 0 3mm}
+  .annex-head{margin:2mm 0 2mm}
   .annex-head h2{font-size:17px}
   .annex-head .orn{margin-top:1.5mm}
   .annex-intro{font-size:14.5px;margin-bottom:3mm}
@@ -146,7 +170,18 @@ main{padding:28px 12px 50px}
   .sl{margin-top:7mm}
   .party .pd{margin-top:5mm}
   .party .seal{width:16mm;height:16mm;margin-top:3mm;font-size:7px}
+  .sig-sm{height:9mm;margin-top:1mm;margin-bottom:-1.2mm}
+  #annex .sl{margin-top:5mm}
+  #annex .sl-signed{margin-top:0}
+  .party .pd{margin-top:3mm}
+  .articles p{font-size:13px}
+  .seal-sm{width:15mm;height:auto;margin-top:2mm}
+  .sign2{margin-top:5mm}
   .party h5{min-height:0;font-size:12px}
+  .party-head{margin-bottom:2mm}
+  .party-logo{width:10mm;height:10mm}
+  .party-logo-x:not(.has){border-color:rgba(176,138,46,.35)}
+  .rcp-logo{width:26mm;height:26mm}
 }
 </style>
 <style id="runStyle"></style>
@@ -166,8 +201,17 @@ main{padding:28px 12px 50px}
   <div class="fields">
     <label><span data-t="fGL"></span><input id="inGL" autocomplete="off"></label>
     <label><span data-t="fGM"></span><input id="inGM" autocomplete="off"></label>
+    <label><span data-t="fGS"></span><input id="inGS" autocomplete="off"></label>
     <label><span data-t="fPlace"></span><input id="inPlace" autocomplete="off"></label>
     <label><span data-t="fRef"></span><input id="inRef" autocomplete="off"></label>
+    <div class="logo-field"><span data-t="fLogo"></span>
+      <div class="logo-ctl">
+        <span class="logo-prev" id="logoPrev"></span>
+        <button type="button" id="logoPick" data-t="logoBtn"></button>
+        <button type="button" id="logoClear" class="alt" data-t="logoRemove" hidden></button>
+      </div>
+      <input type="file" id="logoInput" accept="image/*" hidden>
+    </div>
     <div class="hint" data-t="hint"></div>
   </div>
 </header>
@@ -192,10 +236,13 @@ main{padding:28px 12px 50px}
     </div>
 
     <div class="recipient">
-      <div class="to" data-t="to"></div>
-      <div class="gm" id="vGM"></div>
-      <div class="gl" id="vGL"></div>
-      <div id="vPlace"></div>
+      <div class="rcp-text">
+        <div class="to" data-t="to"></div>
+        <div class="gm" id="vGM"></div>
+        <div class="gl" id="vGL"></div>
+        <div id="vPlace"></div>
+      </div>
+      <div class="rcp-logo" id="vLogo1" hidden></div>
     </div>
 
     <div class="subject" data-t="subject"></div>
@@ -203,13 +250,19 @@ main{padding:28px 12px 50px}
     <div class="body" id="vBody"></div>
 
     <div class="closing"><div data-t="closing"></div><div class="c2" data-t="closing2"></div></div>
-    <div class="sign">
+    <div class="sign sign2">
       <div class="sign-block">
+        <img class="sig-img" src="assets/signatures/benetatos.png" alt="Signature of MW Bro. Ioannis Benetatos">
+        <div class="sign-line"><div class="sign-name" data-t="ngmName"></div></div>
+        <div class="sign-role" data-t="gmRole"></div>
+      </div>
+      <img class="seal-img" src="assets/signatures/nglg-seal.png" alt="Seal of the National Grand Lodge of Greece">
+      <div class="sign-block">
+        <img class="sig-img" src="assets/signatures/skiadopoulos.png" alt="Signature of RW. Bro Dimitrios Skiadopoulos">
         <div class="sign-line"><div class="sign-name" data-t="signer"></div></div>
         <div class="sign-role" data-t="signerRole"></div>
         <div class="sign-cmd" data-t="byCommand"></div>
       </div>
-      <div class="seal" data-t="seal"></div>
     </div>
     <div class="encl"><b data-t="enclTitle"></b><ol id="vEncl"></ol></div>
   </article>
@@ -235,16 +288,20 @@ main{padding:28px 12px 50px}
     <p class="annex-close" data-t="annexClose"></p>
     <div class="parties">
       <div class="party">
-        <h5 data-t="forNGLG"></h5>
-        <div class="sl"><div class="n" data-t="ngmName"></div><div class="r" data-t="gmRole"></div></div>
-        <div class="sl"><div class="n" data-t="signer"></div><div class="r" data-t="gsRole"></div></div>
+        <div class="party-head"><img class="party-logo" src="assets/nglg-crest.jpg" alt=""><h5 data-t="forNGLG"></h5></div>
+        <img class="sig-img sig-sm" src="assets/signatures/benetatos.png" alt="">
+        <div class="sl sl-signed"><div class="n" data-t="ngmName"></div><div class="r" data-t="gmRole"></div></div>
+        <img class="sig-img sig-sm" src="assets/signatures/skiadopoulos.png" alt="">
+        <div class="sl sl-signed"><div class="n" data-t="signer"></div><div class="r" data-t="gsRole"></div></div>
         <div class="pd" data-t="placeDate"></div>
-        <div class="seal" data-t="seal"></div>
+        <img class="seal-img seal-sm" src="assets/signatures/nglg-seal.png" alt="">
       </div>
       <div class="party">
-        <h5 id="vForGL"></h5>
-        <div class="sl"><div class="n" id="vGM2">&nbsp;</div><div class="r" data-t="gmRole"></div></div>
-        <div class="sl"><div class="n">&nbsp;</div><div class="r" data-t="gsRole"></div></div>
+        <div class="party-head"><span class="party-logo party-logo-x" id="vLogo2"></span><h5 id="vForGL"></h5></div>
+        <div class="sig-img sig-sm sig-space"></div>
+        <div class="sl sl-signed"><div class="n" id="vGM2">&nbsp;</div><div class="r" data-t="gmRole"></div></div>
+        <div class="sig-img sig-sm sig-space"></div>
+        <div class="sl sl-signed"><div class="n" id="vGS2">&nbsp;</div><div class="r" data-t="gsRole"></div></div>
         <div class="pd" data-t="placeDate"></div>
         <div class="seal" data-t="seal"></div>
       </div>
@@ -264,7 +321,7 @@ main{padding:28px 12px 50px}
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; }
   var BLANK = '<span class="blank"></span>';
-  var FIELDS = ["GL", "GM", "Place", "Ref"];
+  var FIELDS = ["GL", "GM", "GS", "Place", "Ref"];
 
   function val(f) { return $("in" + f).value.trim(); }
   function glHtml() { return val("GL") ? esc(val("GL")) : BLANK; }
@@ -289,9 +346,40 @@ main{padding:28px 12px 50px}
     $("vArticles").innerHTML = T.articles.map(function (a) { return "<li><div><h4>" + esc(a[0]) + "</h4><p>" + esc(a[1]) + "</p></div></li>"; }).join("");
     $("vForGL").innerHTML = T.forGL.split("{GL}").join(val("GL") ? esc(val("GL")) : "…………………………");
     $("vGM2").innerHTML = val("GM") ? esc(val("GM")) : "&nbsp;";
+    $("vGS2").innerHTML = val("GS") ? esc(val("GS")) : "&nbsp;";
+    $("inGS").placeholder = T.phGS;
+    renderLogo();
     $("runStyle").textContent = "@page{@bottom-left{content:" + JSON.stringify(T.runFooter) +
       ";font-family:'EB Garamond',Georgia,serif;font-size:8pt;color:#5E6170}@bottom-right{content:counter(page) ' / ' counter(pages);font-family:'Cinzel',Georgia,serif;font-size:8pt;color:#B08A2E}}";
     $("backLink").href = "index.html?lang=" + lang;
+  }
+
+  var logo = null;
+  function renderLogo() {
+    var url = logo ? 'url("' + logo + '")' : "";
+    $("vLogo1").hidden = !logo; $("vLogo1").style.backgroundImage = url;
+    $("vLogo2").style.backgroundImage = url; $("vLogo2").classList.toggle("has", !!logo);
+    $("logoPrev").style.backgroundImage = url; $("logoClear").hidden = !logo;
+  }
+  function setLogo(dataUrl) {
+    logo = dataUrl;
+    if (dataUrl) store("nglg.letter.logo", dataUrl); else { try { localStorage.removeItem("nglg.letter.logo"); } catch (e) {} }
+    renderLogo();
+  }
+  function onLogoFile() {
+    var f = $("logoInput").files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      var im = new Image();
+      im.onload = function () {
+        var k = Math.min(1, 600 / Math.max(im.width, im.height));
+        var c = document.createElement("canvas"); c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+        c.getContext("2d").drawImage(im, 0, 0, c.width, c.height);
+        setLogo(c.toDataURL("image/png"));
+      };
+      im.src = r.result;
+    };
+    r.readAsDataURL(f);
   }
 
   function setLang(l) {
@@ -310,6 +398,10 @@ main{padding:28px 12px 50px}
     });
     $("langGroup").addEventListener("click", function (e) { var b = e.target.closest("button[data-lang]"); if (b) setLang(b.dataset.lang); });
     $("btnPrint").addEventListener("click", function () { window.print(); });
+    logo = store("nglg.letter.logo") || null;
+    $("logoPick").addEventListener("click", function () { $("logoInput").value = ""; $("logoInput").click(); });
+    $("logoInput").addEventListener("change", onLogoFile);
+    $("logoClear").addEventListener("click", function () { setLogo(null); });
     var ql = q.get("lang"), sl = store("nglg.lang");
     setLang(LANGS.indexOf(ql) > -1 ? ql : LANGS.indexOf(sl) > -1 ? sl : "en");
   });

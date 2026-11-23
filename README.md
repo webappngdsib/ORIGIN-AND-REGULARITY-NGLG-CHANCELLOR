@@ -51,7 +51,7 @@ Open the page directly in a chosen language:
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
 | VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
-| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador of the NGLG |
+| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador and the Jewel of the Grand Representatives and Honorary Members of the NGLG |
 | X | **Charity and Masonic Heritage** | The Grand Charity of Greece (M.A.S.), with a link to [emste-charity.org](https://emste-charity.org/), and the NGLG Masonic stamps issued by ELTA in 2007 |
 | XI | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
 | XII | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
@@ -82,15 +82,15 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary. It petitions a Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
-- **Recipient:** type the Grand Lodge, its Grand Master, the city and country, and a reference number. The letter fills in automatically.
+- **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
 - **Content:**
   - letterhead of the NGLG
-  - the letter, signed by **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, by command of the Most Worshipful Grand Master
+  - the letter, bearing the signatures of **MW Bro. Ioannis Benetatos, Grand Master** and **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, with the seal of the National Grand Lodge of Greece
   - list of enclosures
-  - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles and signature blocks for both Grand Lodges
+  - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles; the NGLG side is already signed and sealed, the other side is left for the recipient Grand Lodge
 - **Export:** click **Export letter PDF** to get an A4 PDF of 3 pages.
-- **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
+- **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&gs=RW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
 
 Blank, ready-to-fill PDFs:
 
