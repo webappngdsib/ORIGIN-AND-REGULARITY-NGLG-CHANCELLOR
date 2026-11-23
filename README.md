@@ -51,7 +51,7 @@ Open the page directly in a chosen language:
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
 | VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
-| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador of the NGLG |
+| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador and the Jewel of the Grand Representatives and Honorary Members of the NGLG |
 | X | **Charity and Masonic Heritage** | The Grand Charity of Greece (M.A.S.), with a link to [emste-charity.org](https://emste-charity.org/), and the NGLG Masonic stamps issued by ELTA in 2007 |
 | XI | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
 | XII | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
