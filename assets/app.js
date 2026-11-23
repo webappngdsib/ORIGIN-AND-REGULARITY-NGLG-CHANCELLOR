@@ -18,7 +18,10 @@
   var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
   // Supporting document for a timeline entry (by position): 1993 UGLE recognition letter
   var UGLE_DOC_URL = "https://drive.google.com/file/d/1taK4-_1Lhn_Anq8r-OJTJQvV6BrJjemy/view?usp=sharing";
-  var TIMELINE_DOCS = { 1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL } };
+  var TIMELINE_DOCS = {
+    1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL, cap: "ugleDocCap" },
+    6: { src: "assets/documents/scotland-recognition-1995.jpg", url: "assets/documents/scotland-recognition-1995.jpg", cap: "scotDocCap" }
+  };
   var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
   var STAMPS = ["sheet-figure", "stamp-parthenon", "stamp-figure", "sheet-parthenon"];
   var lang = "en";
@@ -108,7 +111,7 @@
       var text = doc ? '<a class="tl-link" href="' + doc.url + '" target="_blank" rel="noopener">' + esc(x[1]) + "</a>" : esc(x[1]);
       var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + text + "</p>";
       if (doc) body += '<a class="tl-doc" href="' + doc.url + '" target="_blank" rel="noopener"><img src="' + doc.src +
-        '" alt="' + esc(T.ugleDocCap) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T.ugleDocCap) +
+        '" alt="' + esc(T[doc.cap]) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T[doc.cap]) +
         '</em><span class="tl-doc-go">' + esc(T.ugleDocLink) + " ↗</span></span></a>";
       if (!em) return "<li>" + body + "</li>";
       return '<li class="has-emblem"><div class="tl-text">' + body + '</div><img class="tl-emblem" src="' + EMBLEMS[em].src +
