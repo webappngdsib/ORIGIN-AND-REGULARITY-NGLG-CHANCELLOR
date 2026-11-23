@@ -76,6 +76,8 @@ en: {
     ["1999", "UGLE transfers recognition to the Grand Lodge of Greece to encourage dialogue, expressly stating that the NGLG remains Regular. Ireland and Scotland maintain their recognition, uninterrupted to this day."],
     ["Today", "102 mutual recognitions worldwide; active participation in the World Conference of Regular Grand Lodges and the European Conferences."]
   ],
+  ugleDocCap: "Letter of the Grand Secretary of UGLE, 8 September 1993",
+  ugleDocLink: "View the original letter",
   coexTitle: "Two Regular Grand Lodges, One Nation",
   coexP1: "The NGLG does not claim exclusive territorial sovereignty over all Craft Freemasonry in Greece. Since 1999 the practical reality within Regular Freemasonry has been one of jurisdictional coexistence between the NGLG and the Grand Lodge of Greece — a position acknowledged by numerous Regular Grand Lodges that maintain fraternal relations with both.",
   coexP2: "There is no bilateral treaty governing this coexistence; it has developed through the independent recognition policies of individual Regular Grand Lodges. The NGLG exercises exclusive jurisdiction over its own Constitution, Lodges and members, consistent with practice recognised throughout the regular Masonic world.",
@@ -267,6 +269,8 @@ es: {
     ["1999", "La GLUI transfiere su reconocimiento a la Gran Logia de Grecia para fomentar el diálogo, declarando expresamente que la GLNG sigue siendo Regular. Irlanda y Escocia mantienen su reconocimiento, ininterrumpido hasta hoy."],
     ["Hoy", "102 reconocimientos mutuos en todo el mundo; participación activa en la Conferencia Mundial de Grandes Logias Regulares y en las Conferencias Europeas."]
   ],
+  ugleDocCap: "Carta del Gran Secretario de la GLUI, 8 de septiembre de 1993",
+  ugleDocLink: "Ver la carta original",
   coexTitle: "Dos Grandes Logias Regulares, una Nación",
   coexP1: "La GLNG no reivindica una soberanía territorial exclusiva sobre toda la Masonería Simbólica en Grecia. Desde 1999 la realidad práctica dentro de la Masonería Regular es la coexistencia jurisdiccional entre la GLNG y la Gran Logia de Grecia, posición reconocida por numerosas Grandes Logias Regulares que mantienen relaciones fraternales con ambas.",
   coexP2: "No existe un tratado bilateral que regule esta coexistencia; se ha desarrollado a través de las políticas de reconocimiento independientes de cada Gran Logia Regular. La GLNG ejerce jurisdicción exclusiva sobre su Constitución, sus Logias y sus miembros, conforme a la práctica reconocida en todo el mundo masónico regular.",
@@ -458,6 +462,8 @@ pt: {
     ["1999", "A GLUI transfere o seu reconhecimento para a Grande Loja da Grécia para incentivar o diálogo, declarando expressamente que a GLNG continua Regular. Irlanda e Escócia mantêm o seu reconhecimento, ininterrupto até hoje."],
     ["Hoje", "102 reconhecimentos mútuos em todo o mundo; participação ativa na Conferência Mundial de Grandes Lojas Regulares e nas Conferências Europeias."]
   ],
+  ugleDocCap: "Carta do Grande Secretário da GLUI, 8 de setembro de 1993",
+  ugleDocLink: "Ver a carta original",
   coexTitle: "Duas Grandes Lojas Regulares, uma Nação",
   coexP1: "A GLNG não reivindica soberania territorial exclusiva sobre toda a Maçonaria Simbólica na Grécia. Desde 1999, a realidade prática na Maçonaria Regular é a coexistência jurisdicional entre a GLNG e a Grande Loja da Grécia, posição reconhecida por numerosas Grandes Lojas Regulares que mantêm relações fraternais com ambas.",
   coexP2: "Não há tratado bilateral que regule esta coexistência; ela desenvolveu-se pelas políticas de reconhecimento independentes de cada Grande Loja Regular. A GLNG exerce jurisdição exclusiva sobre a sua Constituição, as suas Lojas e os seus membros, em conformidade com a prática reconhecida em todo o mundo maçônico regular.",
