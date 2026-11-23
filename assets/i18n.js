@@ -46,6 +46,11 @@ en: {
     ["Sovereign and independent", "The NGLG exercises exclusive and undivided authority over its constituent Lodges and the three Symbolic Degrees within its jurisdiction. No Supreme Council 33° or appendant body exercises authority over Craft governance."]
   ],
 
+  histTitle: "Origin",
+  hist1Date: "February 7 , 1867",
+  hist1Text: "About the foundation of the National Grand Lodge of Greece on the 7 th of February 1867, the First Grand Orient was formed in Greece. That Grand Orient was presenting itself in the english-speaking world as a “Grand Lodge”. Its first Officers were elected in June, 1867, but the position of the Grand Master remained  vacant until July 1872. At that date, its first Constitutions were published and Dimitrios Rhodocanakis was elected its first Grand Master. The Council is elected by the representatives of its members-Lodges. The Grand Orient changed its name into “Grand Orient – Grand Lodge” in 1936 and after the second world war all its documents show the single appellation “Grand Lodge”.",
+  hist2Date: "June 7, 1986",
+  hist2Text: "Inauguration of the National Grand Lodge of Greece, was formed by six (6) Lodges (approx. 250 members) previously under the Jurisdiction of the Grand Lodge of Greece. On the 7 th of June 1986, six Lodges of the Grand Lodge of Greece decided to denounce that Grand Lodge due to continued irregularities, illegal disciplinary procedures and infringement to higher degree bodies. Those Lodges were “Palaion Patron Germanos”, “Acropolis”, “Parthenon”, “Omonoia”, “Miaoulis” and “Pistis”. The representatives of these six Lodges, all present, appointed by the latter, after declaring unanimously the definite exit from the aforementioned federation, founded the National Grand Lodge of Greece, voted its first Constitution, and elected its first Council and Grand Master, Stephanos Paipetis. The inauguration ceremony was led by the late R.W. Bro. William R. J. Eve, Past Grand Deacon of the UGLE and first Deputy Grand Master of the National Grand Lodge of Greece in the city of Athens.",
   origEyebrow: "Foundation · Principle 1",
   origTitle: "A Regular Origin — 7 June 1986",
   origPlaqueDate: "7 June 1986",
@@ -232,6 +237,11 @@ es: {
     ["Soberana e independiente", "La GLNG ejerce autoridad exclusiva e indivisa sobre sus Logias y los tres Grados Simbólicos dentro de su jurisdicción. Ningún Supremo Consejo 33° ni cuerpo colateral ejerce autoridad sobre el gobierno simbólico."]
   ],
 
+  histTitle: "Origen",
+  hist1Date: "7 de febrero de 1867",
+  hist1Text: "En cuanto a la fundación de la Gran Logia Nacional de Grecia: el 7 de febrero de 1867 se constituyó en Grecia el primer Gran Oriente. Dicho Gran Oriente se presentaba en el mundo anglófono como una «Gran Logia». Sus primeros Oficiales fueron elegidos en junio de 1867, pero el cargo de Gran Maestro permaneció vacante hasta julio de 1872. En esa fecha se publicaron sus primeras Constituciones y Dimitrios Rhodocanakis fue elegido su primer Gran Maestro. El Consejo es elegido por los representantes de sus Logias miembros. El Gran Oriente cambió su nombre por el de «Gran Oriente – Gran Logia» en 1936 y, después de la Segunda Guerra Mundial, todos sus documentos muestran la única denominación de «Gran Logia».",
+  hist2Date: "7 de junio de 1986",
+  hist2Text: "Inauguración de la Gran Logia Nacional de Grecia, constituida por seis (6) Logias (aprox. 250 miembros) que se encontraban anteriormente bajo la jurisdicción de la Gran Logia de Grecia. El 7 de junio de 1986, seis Logias de la Gran Logia de Grecia decidieron denunciar a dicha Gran Logia debido a irregularidades continuadas, procedimientos disciplinarios ilegales e injerencias de los cuerpos de grados superiores. Esas Logias fueron «Palaion Patron Germanos», «Acropolis», «Parthenon», «Omonoia», «Miaoulis» y «Pistis». Los representantes de estas seis Logias, todos presentes y designados por ellas, tras declarar por unanimidad la salida definitiva de la mencionada federación, fundaron la Gran Logia Nacional de Grecia, votaron su primera Constitución y eligieron su primer Consejo y Gran Maestro, Stephanos Paipetis. La ceremonia de inauguración fue presidida por el finado R.H. William R. J. Eve, Past Gran Diácono de la GLUI y primer Gran Maestro Adjunto de la Gran Logia Nacional de Grecia, en la ciudad de Atenas.",
   origEyebrow: "Fundación · Principio 1",
   origTitle: "Un Origen Regular — 7 de junio de 1986",
   origPlaqueDate: "7 de junio de 1986",
@@ -418,6 +428,11 @@ pt: {
     ["Soberana e independente", "A GLNG exerce autoridade exclusiva e indivisa sobre as suas Lojas e os três Graus Simbólicos dentro da sua jurisdição. Nenhum Supremo Conselho 33° ou corpo colateral exerce autoridade sobre o governo simbólico."]
   ],
 
+  histTitle: "Origem",
+  hist1Date: "7 de fevereiro de 1867",
+  hist1Text: "Quanto à fundação da Grande Loja Nacional da Grécia: em 7 de fevereiro de 1867 foi constituído na Grécia o primeiro Grande Oriente. Esse Grande Oriente apresentava-se no mundo de língua inglesa como uma «Grande Loja». Os seus primeiros Oficiais foram eleitos em junho de 1867, mas o cargo de Grão-Mestre permaneceu vago até julho de 1872. Nessa data foram publicadas as suas primeiras Constituições e Dimitrios Rhodocanakis foi eleito o seu primeiro Grão-Mestre. O Conselho é eleito pelos representantes das suas Lojas membros. O Grande Oriente mudou o seu nome para «Grande Oriente – Grande Loja» em 1936 e, após a Segunda Guerra Mundial, todos os seus documentos apresentam a denominação única de «Grande Loja».",
+  hist2Date: "7 de junho de 1986",
+  hist2Text: "Inauguração da Grande Loja Nacional da Grécia, constituída por seis (6) Lojas (aprox. 250 membros) anteriormente sob a jurisdição da Grande Loja da Grécia. Em 7 de junho de 1986, seis Lojas da Grande Loja da Grécia decidiram denunciar essa Grande Loja devido a irregularidades continuadas, procedimentos disciplinares ilegais e interferência dos corpos de graus superiores. Essas Lojas eram «Palaion Patron Germanos», «Acropolis», «Parthenon», «Omonoia», «Miaoulis» e «Pistis». Os representantes destas seis Lojas, todos presentes e por elas designados, após declararem por unanimidade a saída definitiva da referida federação, fundaram a Grande Loja Nacional da Grécia, votaram a sua primeira Constituição e elegeram o seu primeiro Conselho e Grão-Mestre, Stephanos Paipetis. A cerimônia de inauguração foi conduzida pelo saudoso R.Ir. William R. J. Eve, Past Grande Diácono da GLUI e primeiro Grão-Mestre Adjunto da Grande Loja Nacional da Grécia, na cidade de Atenas.",
   origEyebrow: "Fundação · Princípio 1",
   origTitle: "Uma Origem Regular — 7 de junho de 1986",
   origPlaqueDate: "7 de junho de 1986",

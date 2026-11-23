@@ -31,9 +31,9 @@ Open the page directly in a chosen language:
 
 | Language | File | Pages |
 |---|---|---|
-| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 21 |
-| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 21 |
-| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 21 |
+| 🇬🇧 English | [NGLG-Origin-and-Regularity-EN.pdf](pdf/NGLG-Origin-and-Regularity-EN.pdf) | 22 |
+| 🇪🇸 Español | [NGLG-Origen-y-Regularidad-ES.pdf](pdf/NGLG-Origen-y-Regularidad-ES.pdf) | 22 |
+| 🇧🇷 Português (Brasil) | [NGLG-Origem-e-Regularidade-PT-BR.pdf](pdf/NGLG-Origem-e-Regularidade-PT-BR.pdf) | 22 |
 
 ---
 
@@ -45,7 +45,7 @@ Open the page directly in a chosen language:
 | — | **Contents** | Table of contents in the selected language |
 | I | **Executive Summary** | The case for regular recognition |
 | II | **The Eight Basic Principles** | The basic principles for Grand Lodge recognition (as in the UGLE Book of Constitutions), plus membership, conduct and sovereignty |
-| III | **A Regular Origin — 7 June 1986** | The foundation by six regularly constituted Lodges, the 1993 recognition by UGLE, the Constitution, and the six founding Lodges |
+| III | **A Regular Origin — 7 June 1986** | Origin: 7 February 1867 (the first Grand Orient in Greece) and 7 June 1986 (inauguration of the NGLG); The foundation by six regularly constituted Lodges, the 1993 recognition by UGLE, the Constitution, and the six founding Lodges |
 | IV | **Chain of Recognition** | Timeline from 1986 to today, showing the emblems of UGLE (1993), Ireland (1994) and Scotland (1995), coexistence with the Grand Lodge of Greece, and the difference between *recognition* and *regularity* |
 | V | **The NGLG Today** | Wide photograph of the **Grand Meeting**, key figures, the Conference of Worshipful Masters, the Grand Meetings, and the cities where the NGLG is present |
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
@@ -111,7 +111,7 @@ Blank, ready-to-fill PDFs:
 The PDF layout works as follows:
 - The cover is a full page.
 - Every chapter starts on a new page.
-- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 21).
+- Every page has a footer with the signature line *"Grand Secretary RW. Bro Dimitrios Skiadopoulos"* and the page number (e.g. 5 / 22).
 - The full register of 102 recognitions is always printed, even when a search is active.
 
 For the best result, use Google Chrome or Microsoft Edge.
