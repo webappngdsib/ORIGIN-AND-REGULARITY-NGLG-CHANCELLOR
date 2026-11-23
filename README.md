@@ -82,7 +82,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary. It petitions a Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
-- **Recipient:** type the Grand Lodge, its Grand Master, the city and country, and a reference number. The letter fills in automatically.
+- **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
 - **Content:**
   - letterhead of the NGLG
@@ -90,7 +90,7 @@ The page [`letter.html`](letter.html) holds a formal Masonic letter from the Gra
   - list of enclosures
   - an **Annex**: the *Instrument of Mutual Recognition and Exchange of Grand Representatives*, with five articles; the NGLG side is already signed and sealed, the other side is left for the recipient Grand Lodge
 - **Export:** click **Export letter PDF** to get an A4 PDF of 3 pages.
-- **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
+- **Direct links:** `letter.html?lang=es`, or pre-filled: `letter.html?lang=en&gl=Grand%20Lodge%20of%20…&gm=MW%20Bro.%20…&gs=RW%20Bro.%20…&place=City%2C%20Country&ref=NGLG%2FGS%2F2026%2F001`
 
 Blank, ready-to-fill PDFs:
 
