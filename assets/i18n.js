@@ -154,6 +154,11 @@ en: {
   chartTitle: "Recognitions by region",
   homeGL: "Home Grand Lodge",
 
+  confTitle: "European Conference of Grand Secretaries and Grand Chancellors",
+  confText: "The National Grand Lodge of Greece takes part in the European Conference of Grand Secretaries and Grand Chancellors. At the conference held in Edinburgh, Scotland, on 11 October 2024, the Grand Secretary of the NGLG, <strong>RW. Bro Dimitrios Skiadopoulos</strong>, addressed the delegates as a speaker. The NGLG also took part in the European Grand Secretaries Conference held at Freemasons' Hall, London, on 9–10 October 2026.",
+  confCap1: "European Grand Secretaries Conference 2026 — Freemasons' Hall, London, 9–10 October 2026",
+  confCap2: "Edinburgh, 11 October 2024 — RW. Bro Dimitrios Skiadopoulos, Grand Secretary of the NGLG, addressing the conference",
+
   govEyebrow: "Governance",
   govTitle: "Administrative and Masonic Structure",
   govP1: "Supreme authority is vested in the Grand Lodge, presided over by the elected Most Worshipful Grand Master, assisted by the Grand Officers and constitutional committees. The Grand Lodge governs 83 Lodges in 5 Provinces and 1 District and exercises exclusive authority over the three Craft Degrees.",
@@ -178,10 +183,12 @@ en: {
     "Widows Sons"
   ],
 
-  medalTitle: "Medal and Jewel of the NGLG",
+  medalTitle: "Medal and Jewels of the NGLG",
   medalCap: "The Medal of the Ambassador of the National Grand Lodge of Greece",
   jewelCap: "The Jewel of the Grand Representatives and Honorary Members of the National Grand Lodge of Greece",
   jewelDesc: "Worn by the Grand Representatives of the NGLG and by its Honorary Members: the coat of arms of the NGLG between its two figures, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "The Jewel of the Grand Master's Benevolent Fund",
+  bfDesc: "Commemorating the forty years of the NGLG, 1986–2026, on a ribbon in the blue and white of Greece.",
   medalDesc: "Bearing the coat of arms of the NGLG upon the globe, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusion",
@@ -370,6 +377,11 @@ es: {
   chartTitle: "Reconocimientos por región",
   homeGL: "Gran Logia madre",
 
+  confTitle: "Conferencia Europea de Grandes Secretarios y Grandes Cancilleres",
+  confText: "La Gran Logia Nacional de Grecia participa en la Conferencia Europea de Grandes Secretarios y Grandes Cancilleres. En la conferencia celebrada en Edimburgo, Escocia, el 11 de octubre de 2024, el Gran Secretario de la GLNG, <strong>RW. Bro Dimitrios Skiadopoulos</strong>, se dirigió a los delegados como orador. La GLNG participó también en la Conferencia Europea de Grandes Secretarios celebrada en el Freemasons' Hall de Londres, los días 9 y 10 de octubre de 2026.",
+  confCap1: "Conferencia Europea de Grandes Secretarios 2026 — Freemasons' Hall, Londres, 9–10 de octubre de 2026",
+  confCap2: "Edimburgo, 11 de octubre de 2024 — RW. Bro Dimitrios Skiadopoulos, Gran Secretario de la GLNG, dirigiéndose a la conferencia",
+
   govEyebrow: "Gobierno",
   govTitle: "Estructura Administrativa y Masónica",
   govP1: "La autoridad suprema reside en la Gran Logia, presidida por el Muy Respetable Gran Maestro electo, asistido por los Grandes Oficiales y las comisiones constitucionales. La Gran Logia gobierna 83 Logias en 5 Provincias y 1 Distrito y ejerce autoridad exclusiva sobre los tres Grados Simbólicos.",
@@ -394,10 +406,12 @@ es: {
     "Widows Sons (Hijos de la Viuda)"
   ],
 
-  medalTitle: "Medalla y Joya de la GLNG",
+  medalTitle: "Medalla y Joyas de la GLNG",
   medalCap: "Medalla del Embajador de la Gran Logia Nacional de Grecia",
   jewelCap: "La Joya de los Grandes Representantes y Miembros de Honor de la Gran Logia Nacional de Grecia",
   jewelDesc: "Portada por los Grandes Representantes de la GLNG y por sus Miembros de Honor: el escudo de armas de la GLNG entre sus dos figuras, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "La Joya del Fondo Benéfico del Gran Maestro",
+  bfDesc: "Conmemora los cuarenta años de la GLNG, 1986–2026, sobre una cinta con el azul y blanco de Grecia.",
   medalDesc: "Con el escudo de armas de la GLNG sobre el globo terrestre, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusión",
@@ -586,6 +600,11 @@ pt: {
   chartTitle: "Reconhecimentos por região",
   homeGL: "Grande Loja Mãe",
 
+  confTitle: "Conferência Europeia de Grandes Secretários e Grandes Chanceleres",
+  confText: "A Grande Loja Nacional da Grécia participa na Conferência Europeia de Grandes Secretários e Grandes Chanceleres. Na conferência realizada em Edimburgo, Escócia, em 11 de outubro de 2024, o Grande Secretário da GLNG, <strong>RW. Bro Dimitrios Skiadopoulos</strong>, dirigiu-se aos delegados como orador. A GLNG participou também na Conferência Europeia de Grandes Secretários realizada no Freemasons' Hall de Londres, em 9 e 10 de outubro de 2026.",
+  confCap1: "Conferência Europeia de Grandes Secretários 2026 — Freemasons' Hall, Londres, 9–10 de outubro de 2026",
+  confCap2: "Edimburgo, 11 de outubro de 2024 — RW. Bro Dimitrios Skiadopoulos, Grande Secretário da GLNG, discursando na conferência",
+
   govEyebrow: "Governo",
   govTitle: "Estrutura Administrativa e Maçônica",
   govP1: "A autoridade suprema reside na Grande Loja, presidida pelo Sereníssimo Grão-Mestre eleito, assistido pelos Grandes Oficiais e pelas comissões constitucionais. A Grande Loja governa 83 Lojas em 5 Províncias e 1 Distrito e exerce autoridade exclusiva sobre os três Graus Simbólicos.",
@@ -610,10 +629,12 @@ pt: {
     "Widows Sons (Filhos da Viúva)"
   ],
 
-  medalTitle: "Medalha e Joia da GLNG",
+  medalTitle: "Medalha e Joias da GLNG",
   medalCap: "Medalha do Embaixador da Grande Loja Nacional da Grécia",
   jewelCap: "A Joia dos Grandes Representantes e Membros Honorários da Grande Loja Nacional da Grécia",
   jewelDesc: "Usada pelos Grandes Representantes da GLNG e pelos seus Membros Honorários: o brasão da GLNG entre as suas duas figuras, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "A Joia do Fundo Beneficente do Grão-Mestre",
+  bfDesc: "Comemora os quarenta anos da GLNG, 1986–2026, numa fita com o azul e branco da Grécia.",
   medalDesc: "Com o brasão da GLNG sobre o globo terrestre, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusão",

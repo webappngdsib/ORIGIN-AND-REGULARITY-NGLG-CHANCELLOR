@@ -50,8 +50,8 @@ Open the page directly in a chosen language:
 | V | **The NGLG Today** | Wide photograph of the **Grand Meeting**, key figures, the Conference of Worshipful Masters, the Grand Meetings, and the cities where the NGLG is present |
 | VI | **Leadership** | Full-height photograph of the **Grand Master**, MW Bro. Ioannis Benetatos; the 14 Grand Masters since 1986, beginning with the first Grand Master, Prof. Stephanos Paipetis (University of Patras) |
 | VII | **The Masonic Temples** | The 20 Masonic buildings of the NGLG, and a photo gallery of temple interiors |
-| VIII | **Register of the 102 Mutual Recognitions** | Chart by region, plus the full register with search |
-| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador and the Jewel of the Grand Representatives and Honorary Members of the NGLG |
+| VIII | **Register of the 102 Mutual Recognitions** | Chart by region, the full register with search, and the NGLG at the European Conference of Grand Secretaries and Grand Chancellors (Edinburgh, 11 Oct 2024, with the Grand Secretary as speaker; London, 9–10 Oct 2026) |
+| IX | **Governance** | Administrative and Masonic structure; the 15 Masonic bodies and independent orders; the Medal of the Ambassador, the Jewel of the Grand Representatives and Honorary Members, and the Jewel of the Grand Master's Benevolent Fund (1986–2026) |
 | X | **Charity and Masonic Heritage** | The Grand Charity of Greece (M.A.S.), with a link to [emste-charity.org](https://emste-charity.org/), and the NGLG Masonic stamps issued by ELTA in 2007 |
 | XI | **Four Pillars of Regularity** | Lawful establishment · Unbroken lineage · Constitutional fidelity · Enduring recognition |
 | XII | **Attestation** | Certification by the Grand Secretariat, with the full-height photograph and signature of **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, and contact details |
@@ -80,7 +80,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 
 ## ✉️ Petition letter for mutual recognition
 
-The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary. It petitions a Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**. Open it with the **Petition letter PDF** button in the top bar of the dossier.
+The page [`letter.html`](letter.html) holds a formal Masonic letter from the Grand Secretary, **addressed to the Grand Secretary of the other Grand Lodge**. It petitions that Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**, and asks the Grand Secretary to convey the greetings of our Grand Master to his Grand Master and to place the petition before him. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
 - **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
 - **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
