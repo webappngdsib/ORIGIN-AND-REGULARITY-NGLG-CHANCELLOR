@@ -178,10 +178,12 @@ en: {
     "Widows Sons"
   ],
 
-  medalTitle: "Medal and Jewel of the NGLG",
+  medalTitle: "Medal and Jewels of the NGLG",
   medalCap: "The Medal of the Ambassador of the National Grand Lodge of Greece",
   jewelCap: "The Jewel of the Grand Representatives and Honorary Members of the National Grand Lodge of Greece",
   jewelDesc: "Worn by the Grand Representatives of the NGLG and by its Honorary Members: the coat of arms of the NGLG between its two figures, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "The Jewel of the Grand Master's Benevolent Fund",
+  bfDesc: "Commemorating the forty years of the NGLG, 1986–2026, on a ribbon in the blue and white of Greece.",
   medalDesc: "Bearing the coat of arms of the NGLG upon the globe, beneath the motto ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusion",
@@ -394,10 +396,12 @@ es: {
     "Widows Sons (Hijos de la Viuda)"
   ],
 
-  medalTitle: "Medalla y Joya de la GLNG",
+  medalTitle: "Medalla y Joyas de la GLNG",
   medalCap: "Medalla del Embajador de la Gran Logia Nacional de Grecia",
   jewelCap: "La Joya de los Grandes Representantes y Miembros de Honor de la Gran Logia Nacional de Grecia",
   jewelDesc: "Portada por los Grandes Representantes de la GLNG y por sus Miembros de Honor: el escudo de armas de la GLNG entre sus dos figuras, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "La Joya del Fondo Benéfico del Gran Maestro",
+  bfDesc: "Conmemora los cuarenta años de la GLNG, 1986–2026, sobre una cinta con el azul y blanco de Grecia.",
   medalDesc: "Con el escudo de armas de la GLNG sobre el globo terrestre, bajo el lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusión",
@@ -610,10 +614,12 @@ pt: {
     "Widows Sons (Filhos da Viúva)"
   ],
 
-  medalTitle: "Medalha e Joia da GLNG",
+  medalTitle: "Medalha e Joias da GLNG",
   medalCap: "Medalha do Embaixador da Grande Loja Nacional da Grécia",
   jewelCap: "A Joia dos Grandes Representantes e Membros Honorários da Grande Loja Nacional da Grécia",
   jewelDesc: "Usada pelos Grandes Representantes da GLNG e pelos seus Membros Honorários: o brasão da GLNG entre as suas duas figuras, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
+  bfCap: "A Joia do Fundo Beneficente do Grão-Mestre",
+  bfDesc: "Comemora os quarenta anos da GLNG, 1986–2026, numa fita com o azul e branco da Grécia.",
   medalDesc: "Com o brasão da GLNG sobre o globo terrestre, sob o lema ΕΓΩ ΕΙΜΙ Ο ΩΝ.",
 
   conEyebrow: "Conclusão",
