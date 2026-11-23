@@ -13,12 +13,16 @@
     ireland: { src: "assets/emblems/grand-lodge-ireland.png", alt: "Emblem of the Grand Lodge of Ireland" },
     scotland: { src: "assets/emblems/grand-lodge-scotland.png", alt: "Emblem of the Grand Lodge of Scotland" }
   };
-  // Timeline entries (by position): 8 Sep 1993 UGLE, 3 Oct 1994 Ireland, 4 May 1995 Scotland
+  // Timeline entries (by position): 8 Sep 1993 UGLE, 1 Oct 1994 Ireland, 4 May 1995 Scotland
   var TIMELINE_EMBLEMS = { 1: "ugle", 5: "ireland", 6: "scotland" };
   var REGISTER_EMBLEMS = { 1: "ireland", 2: "scotland" };
   // Supporting document for a timeline entry (by position): 1993 UGLE recognition letter
   var UGLE_DOC_URL = "https://drive.google.com/file/d/1taK4-_1Lhn_Anq8r-OJTJQvV6BrJjemy/view?usp=sharing";
-  var TIMELINE_DOCS = { 1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL } };
+  var TIMELINE_DOCS = {
+    1: { src: "assets/documents/ugle-recognition-1993.jpg", url: UGLE_DOC_URL, cap: "ugleDocCap" },
+    5: { src: "assets/documents/ireland-recognition-1994.jpg", url: "assets/documents/ireland-recognition-1994.jpg", cap: "ireDocCap" },
+    6: { src: "assets/documents/scotland-recognition-1995.jpg", url: "assets/documents/scotland-recognition-1995.jpg", cap: "scotDocCap" }
+  };
   var CH_IDS = ["summary", "principles", "origin", "recognition", "today", "temples", "register", "charity", "attestation"];
   var STAMPS = ["sheet-figure", "stamp-parthenon", "stamp-figure", "sheet-parthenon"];
   var lang = "en";
@@ -85,6 +89,14 @@
     $("coverStats").innerHTML = pairs(T.coverStats, "div");
     $("sumStats").innerHTML = pairs(T.sumStats, "div");
 
+    function factItems(arr) {
+      return arr.map(function (f) {
+        return "<li>" + esc(f).replace(/www\.emste-charity\.org/, '<a href="https://emste-charity.org/" target="_blank" rel="noopener">www.emste-charity.org</a>') + "</li>";
+      }).join("");
+    }
+    $("factsList1").innerHTML = factItems(T.facts1);
+    $("factsList2").innerHTML = factItems(T.facts2);
+
     $("principlesList").innerHTML = T.principles.map(function (p, k) {
       return '<li><span class="num">' + (k + 1) + "</span><div><h4>" + esc(p[0]) + "</h4><p>" + esc(p[1]) + "</p></div></li>";
     }).join("");
@@ -100,7 +112,7 @@
       var text = doc ? '<a class="tl-link" href="' + doc.url + '" target="_blank" rel="noopener">' + esc(x[1]) + "</a>" : esc(x[1]);
       var body = '<div class="yr">' + esc(x[0]) + "</div><p>" + text + "</p>";
       if (doc) body += '<a class="tl-doc" href="' + doc.url + '" target="_blank" rel="noopener"><img src="' + doc.src +
-        '" alt="' + esc(T.ugleDocCap) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T.ugleDocCap) +
+        '" alt="' + esc(T[doc.cap]) + '" loading="lazy"><span class="tl-doc-cap"><em>' + esc(T[doc.cap]) +
         '</em><span class="tl-doc-go">' + esc(T.ugleDocLink) + " ↗</span></span></a>";
       if (!em) return "<li>" + body + "</li>";
       return '<li class="has-emblem"><div class="tl-text">' + body + '</div><img class="tl-emblem" src="' + EMBLEMS[em].src +

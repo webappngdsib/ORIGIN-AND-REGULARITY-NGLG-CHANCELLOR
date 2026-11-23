@@ -105,6 +105,14 @@ main{padding:28px 0 40px}
 .stat-grid b{display:block;font-family:var(--display);color:var(--gold-lt);font-size:25px;font-weight:600}
 .stat-grid span{display:block;font-family:var(--sans);font-size:11.5px;color:#D3D8E8;margin-top:4px;line-height:1.35}
 
+.facts{margin-top:40px}
+.facts-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.facts-group{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold-2);padding:18px 20px 8px}
+.facts-group h4{font-family:var(--display);color:var(--navy);font-size:15.5px;margin:0 0 10px;letter-spacing:.03em}
+.facts-group ul{list-style:none;margin:0;padding:0}
+.facts-group li{position:relative;padding:0 0 10px 22px;font-size:15.5px;line-height:1.5;text-align:justify}
+.facts-group li::before{content:"◆";position:absolute;left:0;top:1px;color:var(--gold-2);font-size:11px}
+.facts-group a{color:var(--burgundy)}
 .principles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .principles li{display:grid;grid-template-columns:42px 1fr;gap:14px;background:#fff;border:1px solid var(--line);padding:18px 18px 16px}
 .principles .num{width:38px;height:38px;border-radius:50%;background:var(--navy);color:var(--gold-lt);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:16px}
@@ -314,6 +322,7 @@ main{padding:28px 0 40px}
   .att-grid .photo{max-width:168px;margin:0 auto}
   .gm-list,.bodies,.prose.cols{columns:1}
   .hist-entry{grid-template-columns:1fr;gap:6px}
+  .facts-cols{grid-template-columns:1fr}
   .history{padding:18px 16px 4px}
   .rc-row{grid-template-columns:120px 1fr 30px;font-size:13px}
   .timeline .tl-emblem{height:64px;max-width:64px}
@@ -359,6 +368,18 @@ main{padding:28px 0 40px}
   .two-col{grid-template-columns:1.35fr 1fr;gap:9mm}
   .origin-grid{grid-template-columns:.8fr 1.4fr;gap:8mm}
   .history{margin-bottom:7mm;padding:5mm 6mm 1mm}
+  .facts{margin-top:3mm}
+  #summary .sub-head{margin:3mm 0 2.5mm}
+  #summary .stat-grid div{padding:3mm 3.5mm}
+  #summary .stat-grid{gap:2.5mm}
+  #summary .ch-head{margin-bottom:6mm}
+  .facts-cols{gap:5mm}
+  .facts-group{padding:4mm 4.5mm 1mm}
+  .facts-cols{grid-template-columns:1fr 1fr}
+  .facts-group h4{font-size:11pt;margin-bottom:2.5mm}
+  .facts-group li{font-size:9.5pt;padding-bottom:1.4mm;padding-left:4.5mm;line-height:1.4}
+  .facts-group li::before{font-size:7pt}
+  .facts-group a{text-decoration:none}
   .hist-entry{grid-template-columns:36mm 1fr;gap:5mm;padding-bottom:3.5mm;break-inside:avoid}
   .hist-entry + .hist-entry{padding-top:3.5mm}
   .hist-date{font-size:12.5pt}
