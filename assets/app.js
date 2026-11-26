@@ -4,8 +4,8 @@
 
   var I18N = window.NGLG_I18N;
   var REC = window.NGLG_RECOGNITIONS;
-  var LANGS = ["en", "es", "pt"];
-  var LI = { en: 0, es: 1, pt: 2 };
+  var LANGS = ["en", "es", "pt", "he", "ja"];
+  var LI = { en: 0, es: 1, pt: 2, he: 3, ja: 4 };
   var REGION_ORDER = ["europe", "africa", "asia", "americas", "south"];
   var HOME_GL = { 1: true, 2: true };
   var EMBLEMS = {
@@ -47,12 +47,13 @@
     var s = store("nglg.lang");
     if (s && LANGS.indexOf(s) > -1) return s;
     var n = (navigator.language || "en").slice(0, 2).toLowerCase();
-    return n === "es" ? "es" : n === "pt" ? "pt" : "en";
+    return LANGS.indexOf(n) > -1 ? n : "en";
   }
 
   function setLang(l) {
     lang = l; T = I18N[l];
     document.documentElement.lang = T.htmlLang;
+    document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
     document.title = T.docTitle;
     store("nglg.lang", l);
     var btns = document.querySelectorAll("#langGroup button");
@@ -151,6 +152,7 @@
 
     renderPhotos();
     setRunningFooter();
+    window.NGLG_applyLocale(lang, T);
   }
 
   function pairs(arr, tag) {
@@ -213,6 +215,7 @@
     html += '<tr class="empty" hidden><td colspan="3">' + esc(T.regNone) + "</td></tr>";
     $("regBody").innerHTML = html;
     filterRegister();
+    window.NGLG_applyLocale(lang, T);
   }
 
   function filterRegister() {
@@ -341,3 +344,4 @@
     setLang(pickInitialLang());
   });
 })();
+
