@@ -24,6 +24,8 @@ Open the page directly in a chosen language:
 | 🇬🇧 English | https://webappngdsib.github.io/ORIGIN-AND-REGULARITY-NGLG-CHANCELLOR/?lang=en |
 | 🇪🇸 Español | https://webappngdsib.github.io/ORIGIN-AND-REGULARITY-NGLG-CHANCELLOR/?lang=es |
 | 🇧🇷 Português (Brasil) | https://webappngdsib.github.io/ORIGIN-AND-REGULARITY-NGLG-CHANCELLOR/?lang=pt |
+| 🇮🇱 עברית (Hebrew) | https://webappngdsib.github.io/ORIGIN-AND-REGULARITY-NGLG-CHANCELLOR/?lang=he |
+| 🇯🇵 日本語 (Japanese) | https://webappngdsib.github.io/ORIGIN-AND-REGULARITY-NGLG-CHANCELLOR/?lang=ja |
 
 > **Turning the live page on, once only:** go to **Settings → Pages** in this repository. Under *Build and deployment*, choose **Deploy from a branch**, then the branch **`main`** and the folder **`/ (root)`**, and click **Save**. The page is live at the address above after about a minute. Every later commit to `main` updates it automatically.
 
@@ -83,7 +85,7 @@ Athens · Athens II · Piraeus · Thessaloniki · Patras · Corfu I · Corfu II 
 The page [`letter.html`](letter.html) is reserved for the Grand Secretariat and opens only with its access code. It holds a formal Masonic letter from the Grand Secretary, **addressed to the Grand Secretary of the other Grand Lodge**. It petitions that Grand Lodge for **mutual recognition** and the **reciprocal appointment of Grand Representatives**, and asks the Grand Secretary to convey the greetings of our Grand Master to his Grand Master and to place the petition before him. Open it with the **Petition letter PDF** button in the top bar of the dossier.
 
 - **Recipient:** type the Grand Lodge, its Grand Master, its Grand Secretary, the city and country, and a reference number, and upload the logo of that Grand Lodge. The letter and the annex fill in automatically; the logo is fitted beside the recipient's address and in the annex, opposite the NGLG crest.
-- **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil).
+- **Languages:** 🇬🇧 English · 🇪🇸 Español · 🇧🇷 Português (Brasil) · 🇮🇱 עברית · 🇯🇵 日本語.
 - **Content:**
   - letterhead of the NGLG
   - the letter, bearing the signatures of **MW Bro. Ioannis Benetatos, Grand Master** and **RW. Bro Dimitrios Skiadopoulos, Grand Secretary**, with the seal of the National Grand Lodge of Greece
@@ -186,3 +188,14 @@ The site is a static website with no build step, so it works on GitHub Pages or 
 
 <p align="center"><em>Fraternity · Ethics · Progress</em><br>
 <strong>RW. Bro Dimitrios Skiadopoulos</strong> — Grand Secretary, National Grand Lodge of Greece</p>
+
+
+## Hebrew and Japanese editions
+
+The English text is the original and authoritative source. The dossier, petition letter and annex are translated directly from English. Official Grand Lodge names, personal names, Masonic ranks, Orders and specialised terms (including Regularity, Recognition, Craft, Antient Landmarks, Volume of the Sacred Law and the three Craft Degrees) remain in English to preserve their meaning. Historical documents remain in their original language.
+
+- Hebrew dossier: `?lang=he`; petition and annex: `letter.html?lang=he`.
+- Japanese dossier: `?lang=ja`; petition and annex: `letter.html?lang=ja`.
+- Hebrew uses right-to-left layout with isolated left-to-right English terms, names, email addresses and numbers. Japanese uses horizontal left-to-right text.
+- Use the PDF export buttons for these editions; the ready-made PDFs above are the existing English, Spanish and Portuguese files.
+- Edit `assets/i18n-he-ja.js` and `assets/letter-i18n-he-ja.js` for these translations. `assets/locale-support.js` contains geographic names and text direction helpers; `assets/locales.css` contains the shared typography and direction rules.

@@ -202,6 +202,7 @@ body:not(.gated) .gate{display:none}
 }
 </style>
 <style id="runStyle"></style>
+<link rel="stylesheet" href="assets/locales.css">
 </head>
 <body class="gated">
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
@@ -223,6 +224,9 @@ body:not(.gated) .gate{display:none}
       <button type="button" data-lang="en" title="English"><svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbt"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbt)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>EN</span></button>
       <button type="button" data-lang="es" title="Español"><svg viewBox="0 0 750 500" aria-hidden="true"><rect width="750" height="500" fill="#c60b1e"/><rect width="750" height="250" y="125" fill="#ffc400"/></svg><span>ES</span></button>
       <button type="button" data-lang="pt" title="Português (Brasil)"><svg viewBox="0 0 720 504" aria-hidden="true"><rect width="720" height="504" fill="#009c3b"/><path d="M360 42 678 252 360 462 42 252z" fill="#ffdf00"/><circle cx="360" cy="252" r="110" fill="#002776"/><path d="M252 230c70-14 160-4 218 36l-6 14c-56-38-142-48-210-34z" fill="#fff"/></svg><span>BR</span></button>
+
+        <button type="button" data-lang="he" title="עברית" aria-label="עברית — Hebrew"><svg viewBox="0 0 66 48" aria-hidden="true"><rect width="66" height="48" fill="#fff"/><path d="M0 8h66M0 40h66" stroke="#0038b8" stroke-width="5"/><path d="M33 14l9 16H24zM33 34l9-16H24z" fill="none" stroke="#0038b8" stroke-width="1.6"/></svg><span>HE</span></button>
+        <button type="button" data-lang="ja" title="日本語" aria-label="日本語 — Japanese"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="12" fill="#bc002d"/></svg><span>JA</span></button>
     </div>
     <button type="button" class="btn" id="btnPrint"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-t="exportPdf"></span></button>
   </div>
@@ -340,10 +344,12 @@ body:not(.gated) .gate{display:none}
 
 <script src="assets/gate.js"></script>
 <script src="assets/letter-i18n.js"></script>
+<script src="assets/letter-i18n-he-ja.js"></script>
+<script src="assets/locale-support.js"></script>
 <script>
 (function () {
   "use strict";
-  var L = window.NGLG_LETTER, LANGS = ["en", "es", "pt"], lang = "en", T = L.en;
+  var L = window.NGLG_LETTER, LANGS = ["en", "es", "pt", "he", "ja"], lang = "en", T = L.en;
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} return null; }
@@ -355,6 +361,7 @@ body:not(.gated) .gate{display:none}
 
   function render() {
     document.documentElement.lang = T.htmlLang;
+    document.documentElement.dir = lang === "he" ? "rtl" : "ltr";
     document.title = T.docTitle;
     var n = document.querySelectorAll("[data-t]");
     for (var i = 0; i < n.length; i++) { var v = T[n[i].dataset.t]; if (v !== undefined) n[i].innerHTML = v; }
@@ -362,7 +369,7 @@ body:not(.gated) .gate{display:none}
     $("inRef").placeholder = "NGLG/GS/" + new Date().getFullYear() + "/…";
 
     $("vRef").textContent = val("Ref") || ("NGLG/GS/" + new Date().getFullYear() + "/………");
-    $("vDate").textContent = (lang === "en" ? "Athens, " : "Atenas, ") +
+    $("vDate").textContent = ({en:"Athens, ",es:"Atenas, ",pt:"Atenas, ",he:"אתונה, ",ja:"アテネ、"}[lang]) +
       new Date().toLocaleDateString(T.htmlLang, { day: "numeric", month: "long", year: "numeric" });
     $("vGM").innerHTML = val("GS") ? esc(val("GS")) : BLANK;
     var gmRef = val("GM") ? T.yourGMn.split("{n}").join("<strong>" + esc(val("GM")) + "</strong>") : T.yourGM;
@@ -380,6 +387,7 @@ body:not(.gated) .gate{display:none}
     $("runStyle").textContent = "@page{@bottom-left{content:" + JSON.stringify(T.runFooter) +
       ";font-family:'EB Garamond',Georgia,serif;font-size:8pt;color:#5E6170}@bottom-right{content:counter(page) ' / ' counter(pages);font-family:'Cinzel',Georgia,serif;font-size:8pt;color:#B08A2E}}";
     $("backLink").href = "index.html?lang=" + lang;
+    window.NGLG_applyLocale(lang, T);
   }
 
   var logo = null;
@@ -459,3 +467,4 @@ body:not(.gated) .gate{display:none}
 </script>
 </body>
 </html>
+

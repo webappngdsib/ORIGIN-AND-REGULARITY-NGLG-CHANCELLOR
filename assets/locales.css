@@ -1,0 +1,34 @@
+/* Shared screen/print support for Hebrew and horizontal Japanese. */
+html:lang(he){--serif:"Noto Serif Hebrew","David","Arial",serif;--display:"Noto Serif Hebrew","David","Arial",serif;--sans:"Arial",sans-serif}
+html:lang(ja){--serif:"Noto Serif CJK JP","Yu Mincho","Hiragino Mincho ProN",serif;--display:"Noto Serif CJK JP","Yu Mincho",serif;--sans:"Noto Sans CJK JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;line-break:strict;word-break:normal}
+html:lang(he) body,html:lang(ja) body{overflow-wrap:anywhere}
+html:lang(he) .cover-title,html:lang(ja) .cover-title{font-size:clamp(26px,5vw,48px)}
+html:lang(he) .dropcap::first-letter,html:lang(ja) .dropcap::first-letter{float:none;font-size:inherit;line-height:inherit;margin:0}
+html:lang(he) .toolbar,html:lang(he) .lang{direction:ltr}
+html:lang(he) .toc-list .ey{margin-left:0;margin-right:auto;text-align:left}
+html:lang(he) .note{padding-left:0;padding-right:16px;border-left:0;border-right:2px solid var(--gold-2)}
+html:lang(he) .facts-group li{padding-left:0;padding-right:22px}
+html:lang(he) .facts-group li::before{left:auto;right:0}
+html:lang(he) .history{border-left:1px solid var(--line);border-right:4px solid var(--gold-2)}
+html:lang(he) .timeline{padding-left:0;padding-right:28px}
+html:lang(he) .timeline::before{left:auto;right:6px}
+html:lang(he) .timeline li{padding-left:0;padding-right:18px}
+html:lang(he) .timeline li::before{left:auto;right:-27px}
+html:lang(he) .register thead th,html:lang(he) .hist-doc-cap,html:lang(he) .contact,html:lang(he) .party-head h5{text-align:start}
+html:lang(he) .register .gl{direction:ltr;text-align:left}
+html:lang(he) .register td.no,html:lang(he) .gm-list .t{direction:ltr;unicode-bidi:isolate}
+html:lang(he) .encl ol{padding-left:0;padding-right:5mm}
+html:lang(he) .head-r{text-align:left}
+html:lang(he) input{text-align:start}
+html:lang(he) input#inRef{direction:ltr}
+html:lang(he) bdi{unicode-bidi:isolate}
+html:lang(ja) .body p,html:lang(he) .body p{line-height:1.75}
+html:lang(ja) .cover-kicker,html:lang(ja) .eyebrow,html:lang(he) .cover-kicker,html:lang(he) .eyebrow{letter-spacing:.03em}
+@media(max-width:600px){.toolbar-inner .tools{flex-wrap:wrap}.lang{flex-shrink:0}html:lang(he) .contact{text-align:center}}
+@media print{
+ html:lang(he) .facts-group li{padding-right:4.5mm}
+ html:lang(he) .note{padding-right:3mm}
+ html:lang(ja) .body p,html:lang(he) .body p{line-height:1.55}
+ html:lang(ja) .sheet,html:lang(he) .sheet{height:auto;overflow:visible}
+ html:lang(he) .medal{text-align:start}
+}
